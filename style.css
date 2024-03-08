@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Gothic+A1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family-Gothic: "Gothic A1", sans-serif;
+    --font-family-Dancing: "Dancing Script", cursive;
+    --primary-color: #212121;
+    --secondary-color: #DED7C4;
+}
+
+.bg1 {
+    background-color: chocolate;
+}
+
+.bg2 {
+    background-color: rgb(30, 210, 75);
+}
+
+.bg3 {
+    background-color: rgb(210, 30, 180);
+}
+
+/* FLEXBOX */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.texte-center {
+    text-align: center;
+}
+
+/* GENERAL */
+body {
+    background-color: #212121;
+}
+
+h1,
+h2 {
+    color: var(--secondary-color);
+}
+
+h1 {
+    font-family: var(--font-family-Dancing);
+    font-size: 88px;
+}
+
+h2 {
+    font-family: var(--font-family-Gothic);
+    font-size: 48px;
+    letter-spacing: 18px;
+}
+
+/*TAILLES ET CONTAINEURS*/
+.width50 {
+    width: 50%;
+}
+
+/* ACCEUIL */
+.star-home {
+    width: 100%;
+    height: 100vh;
+    background-image: URL('./assets/star.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(1px 1px 2px);
+    position: relative;
+}
+
+.title {
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.coder {
+    text-align: right;
+    margin-top: 28px;
+}
