@@ -50,6 +50,7 @@
 /* GENERAL */
 body {
     background-color: #212121;
+    position: relative;
 }
 
 h1,
@@ -106,8 +107,25 @@ h2 {
     margin-top: 28px;
 }
 
-.oblique{
+/* BORDURES COLOREES*/
+.border-oblique {
     height: 200px;
+}
+
+.border-sides {
+    max-width: 1500px;
+    height: 5000px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid var(--secondary-color);
+    border-right: 1px solid var(--secondary-color);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 3600px;
+    left: 50%;
 }
 
 /* GRILLE PROFILS */
@@ -153,4 +171,3 @@ h2 {
 .autre {
     grid-area: autre;
 }
-
