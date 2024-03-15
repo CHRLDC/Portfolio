@@ -79,6 +79,7 @@ h2 {
 
 p {
     color: var(--secondary-color);
+    line-height: 1.5rem;
 }
 
 /* BOUTONS*/
@@ -108,12 +109,21 @@ p {
     padding: 0 16px;
 }
 
+/*MARGES*/
 body>section {
     margin-bottom: 200px;
 }
 
 .module {
     padding: 16px
+}
+
+.mrgB16 {
+    margin-bottom: 16px;
+}
+
+.mAuto {
+    margin: auto;
 }
 
 /*HEADER*/
@@ -175,7 +185,6 @@ header nav {
 /* GRILLE PROFILS */
 
 .container-profil {
-    height: 500px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -215,11 +224,29 @@ header nav {
     grid-area: framework;
 }
 
+/*nuage de mots*/
+.cloud {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+    gap: 10px;
+}
+
+.word {
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--secondary-color);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.word:hover {
+    transform: scale(1.2);
+}
+
 /*PROJETS*/
 
 .container-projets {
-    margin-top: 50px;
-    height: 900px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -372,10 +399,6 @@ textarea {
     .footer-star {
         width: 150px;
         margin: auto;
-    }
-
-    #projets {
-        margin-top: 450px;
     }
 
     .star-home {
