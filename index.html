@@ -15,36 +15,34 @@
     <header>
         <nav>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Profils</a></li>
-                <li><a href="">Projets</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profils">Profils</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <!-- HOME -->
-    <div>
-        <div class="star-home">
-            <div class="title flex justify-between align-center">
-                <div class="width50">
-                    <h1>Designer</h1>
-                </div>
-                <div class="width50 coder">
-                    <h2>&lt;coder&gt;</h2>
-                </div>
+    <div id="home" class="star-home">
+        <div class="title flex justify-between align-center">
+            <div class="width50">
+                <h1>Designer</h1>
+            </div>
+            <div class="width50 coder">
+                <h2>&lt;coder&gt;</h2>
             </div>
         </div>
     </div>
     <!-- MARGES COLOREES-->
     <div class="border-oblique"></div>
     <!-- PROFILS -->
-    <section class="container-1200">
-        <h3>Charles DC</h3>
+    <section id="profils" class="container-1200">
+        <h3 class="texte-center">Charles DC</h3>
         <div class="container-profil">
             <div class="me-contacter">
                 <p>Vous avez des questions, des commentaires ou vous souhaitez simplement discuter ? N'hésitez pas à
                     me contacter en utilisant ce bouton:</p>
-                <a href="" class="btn">Me contacter</a>
+                <a href="#contact" class="btn">Me contacter</a>
             </div>
             <div class="bio">
                 <h4>Qui suis-je ?</h4>
@@ -83,7 +81,7 @@
     </section>
 
     <!--PROJETS-->
-    <section class="container-1200 texte-center">
+    <section id="projets" class="container-1200 texte-center">
         <h3>Mes Projets</h3>
         <div class="container-projets">
             <div class="projet1"></div>
@@ -98,9 +96,9 @@
         </div>
     </section>
     <!--ME CONTACTER-->
-    <section class="contact container-1200 texte-center">
+    <section id="contact" class="contact container-1200 texte-center">
         <h3>Me Contacter</h3>
-        <p>Vous avez une question, une proposition, ou envie de dire bonjour ?</p>
+        <p>Vous avez une question, une proposition, ou envie de discuter ?</p>
         <form>
             <div>
                 <input type="text" id="nom" name="nom" value="Votre nom">
@@ -114,7 +112,14 @@
             </div>
         </form>
     </section>
+    <!--FOOTER-->
+    <footer>
+        <div class="footer-star">
+            <img src="./assets/footer-star.svg" alt="photo d'une etoile">
+        </div>
 
+        <p class="texte-center">© 2024 - Creation by Charles DC.</p>
+    </footer>
     <script src="./app.js" defer></script>
 </body>
 
