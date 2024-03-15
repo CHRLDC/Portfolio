@@ -47,15 +47,21 @@
     text-align: center;
 }
 
+/*POSITIONS*/
+.relative {
+    position: relative;
+}
+
 /* GENERAL */
 body {
     background-color: #212121;
-    position: relative;
+    font-family: var(--font-family-Gothic)
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     color: var(--secondary-color);
 }
 
@@ -71,6 +77,24 @@ h2 {
     letter-spacing: 16px;
 }
 
+p {
+    color: var(--secondary-color);
+}
+
+/* BOUTONS*/
+.btn {
+    display: inline-block;
+    padding: 10px 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
 /*TAILLES ET CONTAINEURS*/
 .width50 {
     width: 50%;
@@ -81,6 +105,32 @@ h2 {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+
+/*HEADER*/
+header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 32px;
+}
+
+header nav {
+    margin: 64px 0 0 64px;
+    position: fixed;
 }
 
 /* ACCEUIL */
@@ -112,25 +162,54 @@ h2 {
     height: 200px;
 }
 
-.border-sides {
-    max-width: 1500px;
-    height: 3000px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    border-top: none;
-    border-bottom: none;
-    border-left: 1px solid var(--secondary-color);
-    border-right: 1px solid var(--secondary-color);
-    transform: translate(-50%, -50%);
-    position: absolute;
-    top: 3600px;
-    left: 50%;
-}
 
 /* GRILLE PROFILS */
 
 .container-profil {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "bio language logiciel"
+        "bio me-contacter framework";
+}
+
+.container-profil>div {
+    border: 1px solid var(--secondary-color);
+}
+
+.name {
+    grid-area: name;
+}
+
+.me-contacter {
+    grid-area: me-contacter;
+}
+
+.bio {
+    grid-area: bio;
+}
+
+.language {
+    grid-area: language;
+}
+
+.logiciel {
+    grid-area: logiciel;
+}
+
+.framework {
+    grid-area: framework;
+}
+
+/*PROJETS*/
+
+.container-projets {
+    margin-top: 50px;
     height: 1000px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -139,35 +218,63 @@ h2 {
     gap: 20px 20px;
     grid-auto-flow: row;
     grid-template-areas:
-        "history savoir autre"
-        "language savoir motivation"
-        "language me-contacter motivation";
+        "projet1 projet2 projet3"
+        "projet4 projet5 projet6"
+        "projet7 projet8 projet9";
 }
 
-.container-profil>div {
+.container-projets>div {
     border: 1px solid var(--secondary-color);
 }
 
-.history {
-    grid-area: history;
+.projet1 {
+    grid-area: projet1;
 }
 
-.savoir {
-    grid-area: savoir;
+.projet2 {
+    grid-area: projet2;
 }
 
-.me-contacter {
-    grid-area: me-contacter;
+.projet3 {
+    grid-area: projet3;
 }
 
-.language {
-    grid-area: language;
+.projet4 {
+    grid-area: projet4;
 }
 
-.motivation {
-    grid-area: motivation;
+.projet5 {
+    grid-area: projet5;
 }
 
-.autre {
-    grid-area: autre;
+.projet6 {
+    grid-area: projet6;
+}
+
+.projet7 {
+    grid-area: projet7;
+}
+
+.projet8 {
+    grid-area: projet8;
+}
+
+.projet9 {
+    grid-area: projet9;
+}
+
+/*ME CONTACTER*/
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: transparent;
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 5px;
+    color: var(--secondary-color)
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
 }
