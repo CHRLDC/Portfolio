@@ -278,3 +278,7 @@ input[type="email"]:focus,
 textarea:focus {
     outline: none;
 }
+
+.contact>* {
+    margin-bottom: 32px;
+}
