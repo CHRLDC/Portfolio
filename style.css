@@ -112,6 +112,10 @@ body>section {
     margin-bottom: 200px;
 }
 
+.module {
+    padding: 16px
+}
+
 /*HEADER*/
 header {
     position: absolute;
