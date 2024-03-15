@@ -301,10 +301,6 @@ textarea:focus {
 }
 
 @media screen and (max-width: 500px) {
-    body {
-        padding: 0 16px;
-    }
-
     header {
         display: none;
     }
@@ -380,6 +376,10 @@ textarea:focus {
     }
 
     h2 {
-        font-size: 1.3rem;
+        font-size: 8px;
+    }
+
+    h3 {
+        font-size: 4rem;
     }
 }
