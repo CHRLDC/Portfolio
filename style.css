@@ -219,7 +219,7 @@ header nav {
 
 .container-projets {
     margin-top: 50px;
-    height: 1000px;
+    height: 900px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -230,6 +230,12 @@ header nav {
         "projet1 projet2 projet3"
         "projet4 projet5 projet6"
         "projet7 projet8 projet9";
+}
+
+.img-projet {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .container-projets>div {
@@ -317,6 +323,8 @@ textarea {
     height: auto;
     object-fit: cover;
 }
+
+
 
 @media screen and (max-width: 500px) {
     header {
