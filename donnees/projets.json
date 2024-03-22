@@ -1,6 +1,6 @@
 [
     {
-        "nom": "4 Eléments",
+        "nom": "4Elements",
         "categorie": "Site réservation",
         "annee": 2024,
         "client": "Projet personnel",
@@ -10,11 +10,27 @@
         "imageTertiaire": "4elements-tertiaire.png"
     },
     {
-        "nom": "",
-        "categorie": "",
+        "nom": "NMTN",
+        "categorie": "Randonnée",
         "annee": 2024,
-        "client": "",
-        "context": "",
-        "image": ""
+        "client": "Projet Personnel",
+        "context": "Conception d'un site de rando",
+        "imagePrincipal": "nmtn-principal.png"
+    },
+    {
+        "nom": "MARKET",
+        "categorie": "Randonnée",
+        "annee": 2024,
+        "client": "Projet Personnel",
+        "context": "Conception d'un site de rando",
+        "imagePrincipal": "market-principal.png"
+    },
+    {
+        "nom": "ESCAPEGAME",
+        "categorie": "Randonnée",
+        "annee": 2024,
+        "client": "Projet Personnel",
+        "context": "Conception d'un site de rando",
+        "imagePrincipal": "escape-principal.png"
     }
 ]

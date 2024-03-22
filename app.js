@@ -3,18 +3,20 @@ fetch("./donnees/projets.json")
         return res.json()
     })
     .then(data => {
-
+        construitMonTemplate(data)
     })
-
-let zone = document.getElementById('zone')
 
 function construitMonTemplate(donnees) {
-    // Efface la zone:
-    zone.innerHTML = ""
-    //pour tous les élements du tableau:
+    let zone = document.getElementById('zone');
+
     donnees.forEach(donnee => {
-        //j'insère le template dans la zone en fonction des données:
-        //google outils d'aide au balisage pour le référencement:
-        zone.innerHTML += ``
-    })
+        zone.innerHTML += `<a href="./projet.html?ref=${donnee.nom}">
+                                <div class="projet-com mrgB45 bg-proj"></div>
+                              </a>`;
+    });
+
+    let bgProjTous = document.querySelectorAll(".bg-proj");
+    bgProjTous.forEach((bgProj, index) => {
+        bgProj.style.backgroundImage = `url('./images/${donnees[index].imagePrincipal}')`;
+    });
 }
