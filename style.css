@@ -58,6 +58,13 @@ body {
     font-family: var(--font-family-Gothic)
 }
 
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
 h1,
 h2,
 h3,
@@ -259,30 +266,34 @@ header nav {
         "projet7 projet8 projet9";
 }
 
-.img-projet {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
 .container-projets>div {
     border: 1px solid var(--secondary-color);
 }
 
+.projet-com{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
 .projet1 {
     grid-area: projet1;
+    background-image: URL('./images/4elements-principal.png');
 }
 
 .projet2 {
     grid-area: projet2;
+    background-image: URL('./images/nmtn-principal.png');
 }
 
 .projet3 {
     grid-area: projet3;
+    background-image: URL('./images/escape-principal.png');
 }
 
 .projet4 {
     grid-area: projet4;
+    background-image: URL('./images/market-principal.png');
 }
 
 .projet5 {
