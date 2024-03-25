@@ -19,3 +19,5 @@ function construitMonTemplate(donnees) {
         bgProj.style.backgroundImage = `url('./images/${donnees[index].imagePrincipal}')`
     })
 }
+
+

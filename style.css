@@ -55,7 +55,7 @@
 
 /* GENERAL */
 body {
-    background-color: #212121;
+    background-color: var(--primary-color);
     font-family: var(--font-family-Gothic)
 }
 
@@ -76,13 +76,13 @@ h4 {
 h1,
 h3 {
     font-family: var(--font-family-Dancing);
-    font-size: 88px;
+    font-size: 66px;
 }
 
 h2 {
     font-family: var(--font-family-Gothic);
     font-size: 48px;
-    letter-spacing: 16px;
+    letter-spacing: 10px;
 }
 
 p {
@@ -122,7 +122,6 @@ p {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 16px;
 }
 
 /*MARGES*/
@@ -157,15 +156,12 @@ body>section {
 .gap30 {
     gap: 80px;
 }
-.inter-section{
+
+.inter-section {
     padding-bottom: 200px;
 }
+
 /*HEADER*/
-header {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
 
 ul li a {
     color: var(--secondary-color);
@@ -181,16 +177,18 @@ ul li {
     margin-bottom: 32px;
 }
 
-header nav {
-    margin: 64px 0 0 64px;
-    position: fixed;
+header {
+    position: sticky;
+    top: 0;
+    padding-top: 50px;
+    margin-left: -150px;
 }
 
 /* ACCEUIL */
 .star-home {
     width: 100%;
-    height: 100vh;
-    background-image: URL('./assets/star.svg');
+    height: 88vh;
+    background-image: URL('./assets/Texte-Acceuil.svg');
     background-repeat: no-repeat;
     background-position: center;
     filter: drop-shadow(1px 1px 2px);
@@ -199,15 +197,15 @@ header nav {
 
 .title {
     width: 700px;
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .coder {
     text-align: right;
-    margin-top: 28px;
+    margin-top: 20px;
+}
+
+.designer {
+    border-right: 1px solid var(--secondary-color);
 }
 
 /* BORDURES COLOREES*/
@@ -217,9 +215,30 @@ header nav {
 }
 
 .border-oblique {
+    width: calc(50% - (100% - 1500px) / 2);
+    margin-left: calc((100% - 1500px) / 2);
     height: 200px;
+    background-color: #616161;
+    position: relative;
+    overflow: hidden;
 }
 
+.border-oblique::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top left, transparent 50%, red 50%);
+    z-index: 1;
+}
+
+
+
+.justify-rigth {
+    justify-content: flex-end;
+}
 
 /* GRILLE PROFILS */
 
@@ -327,15 +346,9 @@ textarea {
     height: 200px;
 }
 
-.zeze>* {
-    margin-bottom: 32px;
-}
-
 /*FOOTER*/
 .footer-star {
-    width: 120px;
-    margin: auto;
-    padding-bottom: 32px;
+    width: 100%;
 }
 
 .footer-star img {
@@ -349,7 +362,6 @@ textarea {
     width: 100%;
     height: 400px;
     overflow-y: scroll;
-    border: 1px solid var(--secondary-color);
 }
 
 .contner::-webkit-scrollbar {
@@ -366,6 +378,22 @@ textarea {
 
 .contner::-webkit-scrollbar-thumb:hover {
     background: #303030;
+}
+
+.fullscreen-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+    position: fixed;
 }
 
 @media screen and (max-width: 500px) {
@@ -451,7 +479,8 @@ textarea {
         width: 100%;
         margin: 0;
     }
-    .projet-com{
+
+    .projet-com {
         width: 400px;
     }
 }

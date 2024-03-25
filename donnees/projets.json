@@ -2,13 +2,14 @@
     {
         "reference": "elements",
         "nom": "4 Elements",
-        "categorie": "Site réservation",
+        "categorie": "Site de réservation",
         "annee": 2024,
         "client": "Projet personnel",
         "context": "Conception d'un site pour la réservation de chambres pour une enseigne premium d'hôtels",
         "imagePrincipal": "4elements-principal.png",
         "imageSecondaire": "4elements-secondaire.png",
-        "imageTertiaire": "4elements-tertiaire.png"
+        "imageTertiaire": "4elements-tertiaire.png",
+        "lien": ""
     },
     {
         "reference": "nmtn",
@@ -17,7 +18,8 @@
         "annee": 2024,
         "client": "Projet Personnel",
         "context": "Conception d'un site de rando",
-        "imagePrincipal": "nmtn-principal.png"
+        "imagePrincipal": "nmtn-principal.png",
+        "lien": ""
     },
     {
         "reference": "market",
@@ -26,7 +28,8 @@
         "annee": 2024,
         "client": "Projet Personnel",
         "context": "Conception d'un site de rando",
-        "imagePrincipal": "market-principal.png"
+        "imagePrincipal": "market-principal.png",
+        "lien": ""
     },
     {
         "reference": "escape",
@@ -35,6 +38,27 @@
         "annee": 2024,
         "client": "Projet Personnel",
         "context": "Conception d'un site de rando",
-        "imagePrincipal": "escape-principal.png"
+        "imagePrincipal": "escape-principal.png",
+        "lien": ""
+    },
+    {
+        "reference": "ms",
+        "nom": "M'S",
+        "categorie": "Boutique en ligne",
+        "annee": 2024,
+        "client": "Projet Personnel",
+        "context": "Conception d'une boutique en ligne",
+        "imagePrincipal": "ms-principal.png",
+        "lien": ""
+    },
+    {
+        "reference": "meteo",
+        "nom": "Appli Méteo",
+        "categorie": "Boutique en ligne",
+        "annee": 2024,
+        "client": "Projet Personnel",
+        "context": "Conception d'une boutique en ligne",
+        "imagePrincipal": "meteo-principal.png",
+        "lien": ""
     }
 ]
