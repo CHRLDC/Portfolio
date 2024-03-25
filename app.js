@@ -10,13 +10,12 @@ function construitMonTemplate(donnees) {
     let zone = document.getElementById('zone');
 
     donnees.forEach(donnee => {
-        zone.innerHTML += `<a href="./projet.html?ref=${donnee.nom}">
+        zone.innerHTML += `<a href="./projet.html?ref=${donnee.reference}">
                                 <div class="projet-com mrgB45 bg-proj"></div>
-                              </a>`;
+                              </a>`
     });
-
-    let bgProjTous = document.querySelectorAll(".bg-proj");
+    let bgProjTous = document.querySelectorAll(".bg-proj")
     bgProjTous.forEach((bgProj, index) => {
-        bgProj.style.backgroundImage = `url('./images/${donnees[index].imagePrincipal}')`;
-    });
+        bgProj.style.backgroundImage = `url('./images/${donnees[index].imagePrincipal}')`
+    })
 }

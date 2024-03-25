@@ -4,6 +4,8 @@ fetch("./donnees/projets.json")
     })
     .then(data => {
         construireMonTemplateProjet(data)
+        scrollProj()
+
     })
 
 let url = window.location.href
@@ -12,17 +14,18 @@ let urlRef = url.split('=')[1]
 function construireMonTemplateProjet(donnees) {
     let zone = document.getElementById("zone-projet")
     donnees.forEach(donne => {
-        if (urlRef === donne.nom) {
+        if (urlRef === donne.reference) {
             zone.innerHTML += `
-            <div>
-            <h1>PROJET PERSO</h1>
-            <p><strong>Nom:</strong>${donne.nom}</p>
-            <p><strong>Année:</strong>${donne.annee}</p>
-            <p><strong>Client:</strong>${donne.client}</p>
-            <p><strong>Contexte:</strong>${donne.context}</p>
+            <div class="width50">
+            <h1 class="mrgB45">${donne.nom}</h1>
+            <p class="mrgB16"><strong>Année:</strong> ${donne.annee}</p>
+            <p class="mrgB16"><strong>Client:</strong> ${donne.client}</p>
+            <p class="mrgB16"><strong>Contexte:</strong> ${donne.context}</p>
         </div>
-        <div>
-        <img src="./images/${donne.imagePrincipal}" alt="">
+        <div class="width50">
+        <div class="contner">
+        <img id="maDiv" src="./images/${donne.imagePrincipal}" alt="">
+        </div>
         </div>
         `
         }

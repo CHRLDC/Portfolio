@@ -138,6 +138,10 @@ body>section {
     margin-top: 100px;
 }
 
+.pT100 {
+    padding: 100px 0 200px 0;
+}
+
 .mAuto {
     margin: auto;
 }
@@ -319,7 +323,29 @@ textarea {
     object-fit: cover;
 }
 
+/* PAGE PROJETS */
+.contner {
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+    border: 1px solid var(--secondary-color);
+}
 
+.contner::-webkit-scrollbar {
+    width: 8px; 
+}
+
+.contner::-webkit-scrollbar-track {
+    background: var(--primary-color)
+}
+
+.contner::-webkit-scrollbar-thumb {
+    background: var(--secondary-color); 
+}
+
+.contner::-webkit-scrollbar-thumb:hover {
+    background: #303030; 
+}
 
 @media screen and (max-width: 500px) {
     header {
