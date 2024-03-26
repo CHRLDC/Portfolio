@@ -105,6 +105,10 @@ p {
 }
 
 /*TAILLES ET CONTAINEURS*/
+.w100 {
+    width: 100%;
+}
+
 .width50 {
     width: 50%;
 }
@@ -133,6 +137,10 @@ body>section {
     padding: 16px
 }
 
+.mrgB125 {
+    margin-bottom: 125px;
+}
+
 .mrgB45 {
     margin-bottom: 45px;
 }
@@ -147,6 +155,10 @@ body>section {
 
 .pT100 {
     padding: 100px 0 200px 0;
+}
+
+.pB80 {
+    padding-bottom: 80px;
 }
 
 .mAuto {
@@ -173,15 +185,13 @@ ul {
     list-style-type: none;
 }
 
-ul li {
-    margin-bottom: 32px;
-}
-
 header {
+    width: 100%;
+    padding: 28px;
+    background-color: var(--primary-color);
     position: sticky;
-    top: 0;
-    padding-top: 50px;
-    margin-left: -150px;
+    top: 0px;
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 /* ACCEUIL */
@@ -247,7 +257,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
-    gap: 20px 20px;
+    gap: 40px 40px;
     grid-auto-flow: row;
     grid-template-areas:
         "bio language logiciel"
@@ -260,10 +270,13 @@ header {
 
 .name {
     grid-area: name;
+
 }
 
 .me-contacter {
     grid-area: me-contacter;
+
+
 }
 
 .bio {
@@ -380,107 +393,24 @@ textarea {
     background: #303030;
 }
 
-.fullscreen-image {
-    width: 100%;
+/*fenêtre en plein écran */
+#plein-ecran {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
     height: 100%;
-    object-fit: contain;
+    display: none;
+    overflow: auto;
 }
 
-.close-button {
-    position: absolute;
+.fermer {
+    position: fixed;
     top: 10px;
     right: 10px;
+    color: #000000;
+    font-size: 48px;
+    font-weight: 700;
     cursor: pointer;
-    color: #fff;
-    font-size: 24px;
-    position: fixed;
-}
-
-@media screen and (max-width: 500px) {
-    header {
-        display: none;
-    }
-
-    .star-home {
-        width: 100%;
-        height: auto;
-    }
-
-    .container-profil {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        gap: 20px 20px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "bio"
-            "language"
-            "logiciel"
-            "framework"
-            "me-contacter"
-    }
-
-    body>section {
-        margin-bottom: 100px;
-    }
-
-    .footer-star {
-        width: 150px;
-        margin: auto;
-    }
-
-    .star-home {
-        width: 100%;
-        height: 50vh;
-        background-image: URL('./assets/star.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 400px;
-        filter: drop-shadow(1px 1px 2px);
-        position: relative;
-    }
-
-    .title {
-        width: 200px;
-        position: absolute;
-        bottom: -20px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1rem;
-    }
-
-    h3 {
-        font-size: 4rem;
-    }
-
-    .coder {
-        text-align: right;
-        margin-top: 5px;
-    }
-
-    .border-oblique {
-        height: 100px;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        width: 100%;
-        margin-bottom: 16px;
-    }
-
-    .zeze {
-        width: 100%;
-        margin: 0;
-    }
-
-    .projet-com {
-        width: 400px;
-    }
 }

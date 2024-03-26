@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(res => res.json())
         .then(data => {
             construireMonTemplateProjet(data);
-            ecouteurPleinEcran();
         })
 });
 
@@ -23,79 +22,29 @@ function construireMonTemplateProjet(donnees) {
         </div>
         <div class="width50">
         <div class="contner">
-        <img id="maDiv" src="./images/${donne.imagePrincipal}" alt="">
+        <img class="img-projet" src="./images/${donne.imagePrincipal}" alt="${donne.nom}" onclick="afficherPleinEcran(this)">
+        <div id="plein-ecran">
+        <span class="fermer" onclick="fermerPleinEcran()">×</span>
+        <img id="image-plein-ecran" src="" alt="">
+</div>
         </div>
         </div>
-        `;
+        `
         }
-    });
+    })
 }
 
-function ecouteurPleinEcran() {
-    let maDiv = document.getElementById("maDiv");
-    maDiv.addEventListener("click", function () {
-        openFullscreen(maDiv.src);
-    });
-}
+function afficherPleinEcran(image) {
+    document.getElementById("image-plein-ecran").src = image.src
+    document.getElementById("plein-ecran").style.display = "block"
+    document.body.style.overflow = "hidden"
 
-function openFullscreen(src) {
-    let fullscreenDiv = document.getElementById("fullscreen");
-
-    // Création de l'élément image pour le mode plein écran
-    let imgFullscreen = document.createElement("img");
-    imgFullscreen.src = src;
-    imgFullscreen.classList.add("fullscreen-image");
-
-    // Effacement du contenu précédent
-    fullscreenDiv.innerHTML = "";
-
-    // Ajout de l'image en plein écran à fullscreenDiv
-    fullscreenDiv.appendChild(imgFullscreen);
-
-    // Création de la croix de fermeture
-    let closeButton = document.createElement("span");
-    closeButton.textContent = "✖";
-    closeButton.classList.add("close-button");
-
-    // Ajout de la croix de fermeture à fullscreenDiv
-    fullscreenDiv.appendChild(closeButton);
-
-    // Masquer l'image d'origine
-    let originalImg = document.getElementById("maDiv");
-    originalImg.style.display = "none";
-
-    // Gestionnaire d'événement pour fermer
-    closeButton.addEventListener("click", function () {
-        // Afficher à nouveau l'image d'origine
-        originalImg.style.display = "block";
-        // Cacher le mode plein écran
-        fullscreenDiv.style.display = "none";
-    });
-
-    // Affichage de fullscreenDiv
-    fullscreenDiv.style.display = "flex";
+    document.getElementById("plein-ecran").addEventListener("click", fermerPleinEcran)
 }
 
 
-
-let swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-
-    },
-  });
+function fermerPleinEcran() {
+    // Fermer l'image en plein écran
+    document.getElementById("plein-ecran").style.display = "none"
+    document.body.style.overflow = ""
+}
