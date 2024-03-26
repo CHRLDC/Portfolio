@@ -24,7 +24,7 @@ function construireMonTemplateProjet(donnees) {
         <div class="contner">
         <img class="img-projet" src="./images/${donne.imagePrincipal}" alt="${donne.nom}" onclick="afficherPleinEcran(this)">
         <div id="plein-ecran">
-        <span class="fermer" onclick="fermerPleinEcran()">×</span>
+        <span class="fermer" onclick="fermerPleinEcran()">&times;</span>
         <img id="image-plein-ecran" src="" alt="">
 </div>
         </div>
@@ -48,8 +48,3 @@ function fermerPleinEcran() {
     document.getElementById("plein-ecran").style.display = "none"
     document.body.style.overflow = ""
 }
-
-
-
-
-
