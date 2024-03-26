@@ -66,4 +66,3 @@ function changeProjet(donnees) {
         window.location.href = `./projet.html?ref=${donnees[indexProjetActuel].reference}`;
     });
 }
-
