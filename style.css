@@ -13,18 +13,6 @@
     --secondary-color: #DED7C4;
 }
 
-.bg1 {
-    background-color: chocolate;
-}
-
-.bg2 {
-    background-color: rgb(30, 210, 75);
-}
-
-.bg3 {
-    background-color: rgb(210, 30, 180);
-}
-
 /* FLEXBOX */
 .flex {
     display: flex;
@@ -443,16 +431,6 @@ textarea {
 /* Petite taille d'écran */
 @media screen and (max-width: 576px) {
 
-    /* Header */
-    header {
-        padding: 15px;
-    }
-
-    /* Menu */
-    ul li a {
-        font-size: 1rem;
-    }
-
     /* Titres */
     h1,
     h3 {
@@ -464,33 +442,34 @@ textarea {
         letter-spacing: 5px;
     }
 
+    .d-noneR {
+        display: none;
+    }
+
     /* Boutons */
     .btn {
         padding: 8px 20px;
         font-size: 14px;
     }
 
-    /* Conteneurs */
-    .container-1200,
-    .container-1500 {
-        padding: 0 10px;
-    }
-
-    /* Profil */
     .container-profil {
+        display: block;
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 5px 5px;
+        grid-auto-flow: row;
         grid-template-areas:
-            "bio"
-            "language"
-            "logiciel"
-            "me-contacter"
-            "framework";
+            "bio language logiciel"
+            "bio me-contacter framework"
     }
 
-    /* Projets */
-    .projet-com {
-        width: 100%;
-        height: 200px;
+    .inter-section {
+        padding-bottom: 50px;
+    }
+
+    .border {
+        border: none;
     }
 
     /* Me contacter */
@@ -498,6 +477,15 @@ textarea {
     input[type="email"],
     textarea {
         width: 100%;
+    }
+
+    .zeze {
+        width: 100%;
+    }
+
+    #zone {
+        width: 100%;
+        justify-content: center;
     }
 }
 
@@ -510,6 +498,10 @@ textarea {
         font-size: 48px;
     }
 
+    .border {
+        border: none;
+    }
+
     h2 {
         font-size: 36px;
         letter-spacing: 8px;
@@ -519,19 +511,10 @@ textarea {
         display: none;
     }
 
-    #zone {
-        width: 100%;
-    }
-
     /* Boutons */
     .btn {
         padding: 10px 30px;
         font-size: 16px;
-    }
-
-    /* Profil */
-    .container-profil {
-        grid-template-columns: repeat(1, 1fr);
     }
 }
 
