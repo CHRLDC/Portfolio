@@ -24,20 +24,20 @@
     {
         "reference": "market",
         "nom": "MARKET",
-        "categorie": "Randonnée",
+        "categorie": "Site marchand",
         "annee": 2024,
         "client": "Projet Personnel",
-        "context": "Conception d'un site de rando",
+        "context": "Conception d'un site marchand",
         "imagePrincipal": "market-principal.png",
         "lien": ""
     },
     {
         "reference": "escape",
         "nom": "ESCAPE GAME",
-        "categorie": "Randonnée",
+        "categorie": "Site marchand",
         "annee": 2024,
         "client": "Projet Personnel",
-        "context": "Conception d'un site de rando",
+        "context": "Conception d'un site e-commerce pour une entreprise d'escape game, offrant une expérience immersive et excitante en ligne",
         "imagePrincipal": "escape-principal.png",
         "lien": ""
     },
@@ -57,7 +57,7 @@
         "categorie": "Boutique en ligne",
         "annee": 2024,
         "client": "Projet Personnel",
-        "context": "Conception d'une boutique en ligne",
+        "context": "Développement d'une application météo intuitive fournissant des prévisions précises et des informations météorologiques en temps réel",
         "imagePrincipal": "meteo-principal.png",
         "lien": ""
     }

@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(res => res.json())
         .then(data => {
             construireMonTemplateProjet(data);
+            changeProjet(data)
         })
 });
 
@@ -48,3 +49,21 @@ function fermerPleinEcran() {
     document.getElementById("plein-ecran").style.display = "none"
     document.body.style.overflow = ""
 }
+
+
+function changeProjet(donnees) {
+    let url = window.location.href;
+    let urlRef = url.split('=')[1];
+    let indexProjetActuel = donnees.findIndex(donnee => donnee.reference === urlRef);
+    document.getElementById("precedent").addEventListener("click", function () {
+        // Rediriger vers le projet précédent
+        indexProjetActuel = (indexProjetActuel - 1 + donnees.length) % donnees.length;
+        window.location.href = `./projet.html?ref=${donnees[indexProjetActuel].reference}`;
+    });
+    document.getElementById("suivant").addEventListener("click", function () {
+        // Rediriger vers le projet suivant
+        indexProjetActuel = (indexProjetActuel + 1) % donnees.length;
+        window.location.href = `./projet.html?ref=${donnees[indexProjetActuel].reference}`;
+    });
+}
+
