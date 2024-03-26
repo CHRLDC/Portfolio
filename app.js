@@ -20,33 +20,40 @@ function construitMonTemplate(donnees) {
     })
 }
 
-
-let conteneur = document.getElementById('conteneur');
-let halo = document.getElementById('halo');
+/* EFFET HALO DAS LES DIVS */
 
 
-function haloPosition(event) {
-    // Récupérer les coordonnées de la souris par rapport à la div conteneur
-    const rect = conteneur.getBoundingClientRect(); // Récupère les dimensions et la position relative de l'élément par rapport à la fenêtre
-    const x = event.clientX - rect.left; // Calcul des coordonnées relatives
-    const y = event.clientY - rect.top;
+let modules = document.querySelectorAll('.module')
 
+// Pour chaque module :
+modules.forEach(module => {
+    // Je récupère l'élément halo à l'intérieur
+    let halo = module.querySelector('.halo')
+
+    // Je fais apparaître le halo
+    module.addEventListener('mouseenter', () => {
+        // Afficher le halo
+        halo.style.display = "block"
+        // Écouter les mouvements de la souris dans le module
+        module.addEventListener('mousemove', haloPosition)
+    })
+
+    // Disparition du halo à la sortie de la souris
+    module.addEventListener('mouseleave', () => {
+        // Masquer le halo
+        halo.style.display = "none"
+        // Arrêter d'écouter les mouvements de la souris dans le module
+        module.removeEventListener('mousemove', haloPosition)
+    })
+})
+
+//applique les cooronnées position souris au halo:
+function haloPosition(hal) {
+    // Récupérer les coordonnées de la souris par rapport au module
+    let x = hal.offsetX
+    let y = hal.offsetY
     // Définir la position du halo en fonction des coordonnées de la souris
-    halo.style.left = `${x - 25}px`; // Déplacer le halo pour qu'il soit centré sur la souris
-    halo.style.top = `${y - 25}px`;
-
-    // Afficher le halo
-    halo.style.display = "block";
+    let halo = hal.currentTarget.querySelector('.halo')
+    halo.style.left = `${x }px`
+    halo.style.top = `${y}px`
 }
-
-// Écouter l'événement de survol de la souris sur la div conteneur
-conteneur.addEventListener('mouseenter', () => {
-    // Afficher le halo et écouter les mouvements de la souris
-    conteneur.addEventListener('mousemove', haloPosition);
-});
-
-// Écouter l'événement de sortie de la souris de la div conteneur pour masquer le halo
-conteneur.addEventListener('mouseleave', () => {
-    halo.style.display = "none"; // Masquer le halo
-    conteneur.removeEventListener('mousemove', haloPosition); // Arrêter d'écouter les mouvements de la souris
-});

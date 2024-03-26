@@ -135,7 +135,9 @@ body>section {
 }
 
 .module {
-    padding: 16px
+    padding: 16px;
+    position: relative;
+    overflow: hidden;
 }
 
 .mrgB125 {
@@ -176,14 +178,9 @@ body>section {
 
 /*EFFET SOURIS*/
 
-#conteneur {
-    position: relative;
-    overflow: hidden;
-}
-
-#halo {
+.halo {
     background-color: rgba(0, 173, 253, 0.658);
-    transform: translate(-40%, -40%);
+    transform: translate(-50%, -50%);
     filter: blur(120px);
     position: absolute;
     width: 150px;
@@ -334,7 +331,6 @@ header {
     border-radius: 5px;
     color: var(--secondary-color);
     text-align: center;
-    transition: all 0.3s ease;
 }
 
 .word:hover {
