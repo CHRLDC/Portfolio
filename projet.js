@@ -48,3 +48,8 @@ function fermerPleinEcran() {
     document.getElementById("plein-ecran").style.display = "none"
     document.body.style.overflow = ""
 }
+
+
+
+
+

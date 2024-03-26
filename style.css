@@ -174,12 +174,36 @@ body>section {
     padding-bottom: 200px;
 }
 
+/*EFFET SOURIS*/
+
+#conteneur {
+    position: relative;
+    overflow: hidden;
+}
+
+#halo {
+    background-color: rgba(0, 173, 253, 0.658);
+    transform: translate(-40%, -40%);
+    filter: blur(120px);
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    pointer-events: none;
+    display: none;
+}
+
 /*HEADER*/
 
 ul li a {
     color: var(--secondary-color);
     text-decoration: none;
     font-size: 1.3rem;
+}
+
+ul li:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
 }
 
 ul {
