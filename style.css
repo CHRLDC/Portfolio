@@ -646,7 +646,11 @@ textarea {
         grid-auto-flow: row;
         grid-template-areas:
             "bio language logiciel"
-            "bio me-contacter framework"
+            "bio me-contacter framework";
+    }
+
+    .container-profil>div {
+        margin-bottom: 8px;
     }
 
     .inter-section {
@@ -674,7 +678,7 @@ textarea {
         justify-content: center;
     }
 
-    
+
     /*PAGE PROJET*/
     .w100R {
         width: 100%;
