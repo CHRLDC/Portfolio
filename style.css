@@ -636,6 +636,9 @@ textarea {
     .contner{
         height: 300px;
     }
+    #plein-ecran{
+        width: 100%;
+    }
 }
 
 /* Moyenne taille d'écran */
