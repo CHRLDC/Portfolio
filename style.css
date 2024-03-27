@@ -587,6 +587,7 @@ textarea {
     .carousel-container {
         width: 100%;
         overflow-x: scroll;
+        scrollbar-width: thin;
     }
 
     .carousel-slides {
