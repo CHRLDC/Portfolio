@@ -108,19 +108,18 @@
         "imagePrincipal": "absurde-principal.png"
     },
     {
-        "reference": "ruche",
-        "nom": "la Ruche",
-        "categorie": "Site de vente en ligne",
+        "reference": "moovizy",
+        "nom": "Moovizy-Sécurite",
+        "categorie": "Application de mobilité",
         "annee": 2024,
         "client": "Projet personnel",
-        "description": "La Ruche est une boutique en ligne dédiée à la vente de miel artisanal, proposant une variété de produits de qualité issus de petites exploitations apicoles. Le site offre une plateforme conviviale pour les amoureux du miel, mettant en valeur les saveurs uniques et les bienfaits de ce produit naturel.",
+        "description": "Conception UI/UX d'une application de mobilité avec un adn de sécurité, de la lowFi à la highFi en passant par des tests utilisateurs.",
         "technologies": [
-            "HTML",
-            "CSS",
-            "JavaScript"
+            "Figma"
         ],
-        "experience": "Ce projet m'a permis de travailler sur un site de commerce électronique axé sur un produit spécifique, en mettant en valeur les caractéristiques uniques de chaque produit et en créant une expérience d'achat engageante pour les utilisateurs.",
-        "imagePrincipal": "ruche-principal.png"
+        "experience": "Conception UI/UX d'une application de mobilité axée sur la sécurité, avec une approche itérative de la low-fi à la high-fi en utilisant Figma. Les étapes incluent l'analyse des besoins, le wireframing, le design visuel, la création de prototypes interactifs et des tests utilisateurs pour garantir une expérience optimale.",
+        "imagePrincipal": "moovizy-principal.png",
+        "lien":"https://www.figma.com/file/Vd2PwyqHM5mJjvPGAUDjvd/Groupe1-Prototypes-Moovizy-S%C3%A9curit%C3%A9?type=design&node-id=1127%3A9587&mode=design&t=AQVgcJilWTcOVPvJ-1"
     },
     {
         "reference": "morpion",
