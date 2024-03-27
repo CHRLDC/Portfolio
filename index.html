@@ -9,7 +9,7 @@
     <title>Designer FullStack - Développement web et mobile</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-
+<!--ECOUTER COMPRENDRE CREER-->
 <body>
     <main>
         <!-- HOME -->
@@ -39,7 +39,7 @@
                     </ul>
                 </nav>
                 <!-- LOGO RESPONSIVE-->
-                <span class="logoMini"></span>
+                <a href="./index.html"><span class="logoMini"></span></a>
                 <!--MENU BURGER-->
                 <div id="burger-menu" class="burger-menu d-none">
                     <div class="bar"></div>
@@ -167,7 +167,7 @@
             <div class="inter-section">
                 <section class="container-1200">
                     <div class="texte-center">
-                        <h3 class="mrgB45">Mes Projets</h3>
+                        <h3 class="mrgB16">Mes Projets</h3>
 
                         <div class="carousel-container">
                             <div id="zone" class="flex justify-between carousel-slides">
@@ -183,16 +183,23 @@
 
             <!--ME CONTACTER-->
             <section class="contact container-1200 texte-center">
-                <h3>Me Contacter</h3>
+                <h3 class="mrgB16">Me Contacter</h3>
                 <p>Vous avez une question, une proposition, ou envie de discuter ?</p>
-                <form>
+                <form id="form">
                     <div class="zeze width50 mAuto">
                         <div class=" flex justify-between mrgB45">
-                            <input type="text" id="nom" name="nom" placeholder="Votre nom">
-                            <input type="email" id="email" name="email" placeholder="Votre adresse e-mail">
+                            <div class="error">
+                                <input type="text" id="nom" name="nom" placeholder="Votre nom">
+                                <p class="p-error d-none mB5" id="error-nom">Error</p>
+                            </div>
+                            <div>
+                                <input type="email" id="email" name="email" placeholder="Votre adresse e-mail">
+                                <p class="p-error d-none mB5" id="error-email">Error</p>
+                            </div>
                         </div>
                         <div class="mrgB45">
                             <textarea id="message" name="message" placeholder="Votre message"></textarea>
+                            <p class="p-error d-none mB5" id="error-message">Error</p>
                         </div>
                         <div>
                             <input type="submit" value="Envoyer" class="btn">
@@ -208,7 +215,7 @@
         <div class="footer-star container-1500">
             <img class="mrgB45" src="./images/Group3.svg" alt="photo d'une etoile">
         </div>
-        <p class="texte-center">© 2024 - Creation by Charles DC.</p>
+        <p class="texte-center mrgB16">© 2024 - Created by Charles DC.</p>
     </footer>
     <script src="./app.js" defer></script>
 </body>

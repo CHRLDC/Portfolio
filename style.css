@@ -323,7 +323,6 @@ header {
 .word {
     font-size: 1rem;
     padding: 5px 10px;
-    border-radius: 5px;
     color: var(--secondary-color);
     text-align: center;
 }
@@ -535,6 +534,14 @@ textarea {
 
 }
 
+.input-error {https://chrldc.github.io/Portfolio/projet.html?ref=ms
+    border: 1px solid rgb(255, 0, 0);
+}
+
+.p-error {
+    color: red;
+    font-size: 14px;
+}
 
 /* Petite taille d'écran */
 @media screen and (max-width: 576px) {
@@ -587,7 +594,6 @@ textarea {
     .carousel-container {
         width: 100%;
         overflow-x: scroll;
-        scrollbar-width: thin;
     }
 
     .carousel-slides {
