@@ -49,7 +49,7 @@ modules.forEach(module => {
 
 //applique les cooronnées position souris au halo:
 function haloPosition(hal) {
-    // Récupérer les coordonnées de la souris par rapport au module
+    // Récupérer les coordonnées de la souris
     let x = hal.offsetX
     let y = hal.offsetY
     // Définir la position du halo en fonction des coordonnées de la souris
