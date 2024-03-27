@@ -612,6 +612,7 @@ textarea {
     .projet-com {
         width: 430px;
         margin-bottom: 16px;
+        margin-top: 8px;
     }
 
     .carousel-container::-webkit-scrollbar {
@@ -673,6 +674,7 @@ textarea {
         justify-content: center;
     }
 
+    
     /*PAGE PROJET*/
     .w100R {
         width: 100%;
