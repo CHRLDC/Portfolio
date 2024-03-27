@@ -10,9 +10,9 @@ function construitMonTemplate(donnees) {
     let zone = document.getElementById('zone');
 
     donnees.forEach(donnee => {
-        zone.innerHTML += `<a href="./projet.html?ref=${donnee.reference}">
-                                <div class="projet-com mrgB45 bg-proj"></div>
-                              </a>`
+        zone.innerHTML += `<div class="carousel-item"> <a href="./projet.html?ref=${donnee.reference}">
+                                <div class="projet-com bg-proj"></div>
+                              </a> </div>`
     });
     let bgProjTous = document.querySelectorAll(".bg-proj")
     bgProjTous.forEach((bgProj, index) => {

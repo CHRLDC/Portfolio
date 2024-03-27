@@ -346,6 +346,7 @@ header {
     height: 250px;
     transition: transform 0.3s ease;
     filter: sepia(100%) brightness(70%);
+    margin-top: 45px;
 }
 
 .projet-com:hover {
@@ -582,6 +583,46 @@ textarea {
         display: none;
     }
 
+    /* SLIDER */
+    .carousel-container {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .carousel-slides {
+        display: flex;
+        flex-wrap: nowrap;
+        width: fit-content;
+        gap: 10px;
+    }
+
+    .carousel-item {
+        scroll-snap-align: start;
+        width: 600px;
+        position: relative;
+    }
+
+    .projet-com {
+        width: 430px;
+        margin-bottom: 16px;
+    }
+
+    .carousel-container::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .carousel-container::-webkit-scrollbar-track {
+        background: var(--primary-color)
+    }
+
+    .carousel-container::-webkit-scrollbar-thumb {
+        background: var(--secondary-color);
+    }
+
+    .carousel-container::-webkit-scrollbar-thumb:hover {
+        background: #303030;
+    }
+
     /* Boutons */
     .btn {
         padding: 8px 20px;
@@ -633,11 +674,17 @@ textarea {
     #retour {
         display: none;
     }
-    .contner{
+
+    .contner {
         height: 300px;
     }
-    #plein-ecran{
+
+    #plein-ecran {
         width: 100%;
+    }
+
+    .projR {
+        justify-content: center;
     }
 }
 
