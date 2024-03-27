@@ -271,7 +271,17 @@ header {
 
 .name {
     grid-area: name;
+}
 
+.logo{
+    background-image: URL('./assets/logo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+    display: grid;
+    margin: 32px 35%;
 }
 
 .me-contacter {
@@ -449,6 +459,7 @@ textarea {
     height: 20px;
     position: relative;
     cursor: pointer;
+
 }
 
 .bar {
@@ -517,7 +528,6 @@ textarea {
 
 /* Petite taille d'écran */
 @media screen and (max-width: 576px) {
-
     .starMini {
         display: block;
     }
