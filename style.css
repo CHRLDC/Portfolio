@@ -221,6 +221,15 @@ header {
     z-index: 1;
 }
 
+.logoMini {
+    background-image: URL('./assets/logo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 35px;
+    width: 35px;
+}
+
 /* ACCEUIL */
 .star-home {
     width: 100%;
@@ -273,7 +282,7 @@ header {
     grid-area: name;
 }
 
-.logo{
+.logo {
     background-image: URL('./assets/logo.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -528,7 +537,22 @@ textarea {
 
 /* Petite taille d'écran */
 @media screen and (max-width: 576px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
     .starMini {
+        display: block;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logoMini {
         display: block;
     }
 
