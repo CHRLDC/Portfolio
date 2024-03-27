@@ -5,60 +5,136 @@
         "categorie": "Site de réservation",
         "annee": 2024,
         "client": "Projet personnel",
-        "context": "Conception d'un site pour la réservation de chambres pour une enseigne premium d'hôtels",
-        "imagePrincipal": "4elements-principal.png",
-        "imageSecondaire": "4elements-secondaire.png",
-        "imageTertiaire": "4elements-tertiaire.png",
-        "lien": ""
+        "description": "Le projet 4 Elements vise à fournir une plateforme de réservation sophistiquée pour une chaîne d'hôtels haut de gamme. L'interface utilisateur est conçue pour offrir une expérience fluide et intuitive, tandis que le backend gère efficacement les réservations et les paiements.",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "experience": "Ce projet m'a permis de renforcer mes compétences en développement front-end, ainsi que ma compréhension des exigences spécifiques des sites de réservation en ligne.",
+        "imagePrincipal": "4elements-principal.png"
     },
     {
         "reference": "nmtn",
         "nom": "NMTN",
         "categorie": "Randonnée",
         "annee": 2024,
-        "client": "Projet Personnel",
-        "context": "Conception d'un site de rando",
-        "imagePrincipal": "nmtn-principal.png",
-        "lien": ""
+        "client": "Projet personnel",
+        "description": "NMTN est une plateforme en ligne dédiée aux amateurs de randonnée. Elle offre des fonctionnalités de planification d'itinéraires, des informations sur les sentiers et des outils pour connecter les randonneurs.",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "experience": "Ce projet m'a permis d'explorer les défis uniques du développement web orienté vers les activités de plein air, et d'améliorer mes compétences en conception et développement d'interfaces utilisateur.",
+        "imagePrincipal": "nmtn-principal.png"
     },
     {
         "reference": "market",
         "nom": "MARKET",
         "categorie": "Site marchand",
         "annee": 2024,
-        "client": "Projet Personnel",
-        "context": "Conception d'un site marchand",
-        "imagePrincipal": "market-principal.png",
-        "lien": ""
+        "client": "Projet personnel",
+        "description": "MARKET est une plateforme de commerce proposant une large gamme de produits. Son interface utilisateur pratique et ses fonctionnalités de recherche avancées offrent une expérience d'achat en ligne optimale.",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "experience": "Ce projet m'a permis de perfectionner mes compétences en développement web et en conception d'interfaces utilisateur, ainsi que ma compréhension des stratégies de vente en ligne.",
+        "imagePrincipal": "market-principal.png"
     },
     {
         "reference": "escape",
         "nom": "ESCAPE GAME",
         "categorie": "Site marchand",
         "annee": 2024,
-        "client": "Projet Personnel",
-        "context": "Conception d'un site e-commerce pour une entreprise d'escape game, offrant une expérience immersive et excitante en ligne",
-        "imagePrincipal": "escape-principal.png",
-        "lien": ""
+        "client": "Projet personnel",
+        "description": "Le projet ESCAPE GAME consiste à créer une plateforme de commerce pour une entreprise d'escape game. Les utilisateurs peuvent réserver une salle et participer aux aventures.",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "experience": "Ce projet m'a offert l'opportunité de développer des fonctionnalités e-commerce complexes tout en garantissant une expérience utilisateur immersive et engageante.",
+        "imagePrincipal": "escape-principal.png"
     },
     {
         "reference": "ms",
         "nom": "M'S",
         "categorie": "Boutique en ligne",
         "annee": 2024,
-        "client": "Projet Personnel",
-        "context": "Conception d'une boutique en ligne",
-        "imagePrincipal": "ms-principal.png",
-        "lien": ""
+        "client": "Projet personnel",
+        "description": "M'S est une boutique en ligne spécialisée dans les produits de sport pour homme. Son design épuré et ses fonctionnalités de navigation simplifiées offrent une expérience d'achat plaisante aux utilisateurs.",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "experience": "Ce projet m'a permis de me concentrer sur l'aspect visuel et l'expérience utilisateur, en mettant en valeur des produits de qualité à travers un design élégant et minimaliste.",
+        "imagePrincipal": "ms-principal.png"
     },
     {
         "reference": "meteo",
         "nom": "Appli Méteo",
         "categorie": "Boutique en ligne",
         "annee": 2024,
-        "client": "Projet Personnel",
-        "context": "Développement d'une application météo intuitive fournissant des prévisions précises et des informations météorologiques en temps réel",
-        "imagePrincipal": "meteo-principal.png",
-        "lien": ""
+        "client": "Projet personnel",
+        "context": "Développement d'une application météo intuitive, fournissant des prévisions précises et des informations météorologiques en temps réel.",
+        "description": "L'Appli Méteo est une application web qui fournit des prévisions météorologiques précises et en temps réel. Elle offre une interface utilisateur intuitive et des fonctionnalités conviviales pour permettre aux utilisateurs de planifier leurs activités en fonction des conditions météorologiques.",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "API météo"
+        ],
+        "experience": "Ce projet m'a permis de développer mes compétences en intégration d'API et en création d'applications web réactives, tout en fournissant une valeur pratique aux utilisateurs finaux.",
+        "imagePrincipal": "meteo-principal.png"
+    },
+    {
+        "reference": "absurde",
+        "nom": "Site Absurde",
+        "categorie": "Utilisation des IA",
+        "annee": 2024,
+        "client": "Projet personnel",
+        "description": "Le Site Absurde est une expérience en ligne générée en partie par l'intelligence artificielle, générant du contenu absurde et surprenant. ",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "ChatGPT",
+            "Dall-E"
+        ],
+        "experience": "Ce projet m'a permis de plonger dans le domaine de l'intelligence artificielle et de découvrir les possibilités créatives offertes par les techniques de génération de contenu automatique.",
+        "imagePrincipal": "absurde-principal.png"
+    },
+    {
+        "reference": "ruche",
+        "nom": "la Ruche",
+        "categorie": "Site de vente en ligne",
+        "annee": 2024,
+        "client": "Projet personnel",
+        "description": "La Ruche est une boutique en ligne dédiée à la vente de miel artisanal, proposant une variété de produits de qualité issus de petites exploitations apicoles. Le site offre une plateforme conviviale pour les amoureux du miel, mettant en valeur les saveurs uniques et les bienfaits de ce produit naturel.",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "experience": "Ce projet m'a permis de travailler sur un site de commerce électronique axé sur un produit spécifique, en mettant en valeur les caractéristiques uniques de chaque produit et en créant une expérience d'achat engageante pour les utilisateurs.",
+        "imagePrincipal": "ruche-principal.png"
+    },
+    {
+        "reference": "morpion",
+        "nom": "Morpion XOX",
+        "categorie": "Jeux en ligne",
+        "annee": 2024,
+        "client": "Projet personnel",
+        "description": "Le Morpion XOX est une version en ligne du jeu classique de morpion. Avec son interface utilisateur simple et ses fonctionnalités multijoueurs, le jeu offre une expérience divertissante pour les joueurs de tous âges.",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "experience": "Ce projet m'a permis de me plonger dans le développement de jeux en ligne en utilisant des technologies web modernes, tout en explorant les défis spécifiques liés à la création de jeux multijoueurs en temps réel.",
+        "imagePrincipal": "morpion-principal.png"
     }
 ]

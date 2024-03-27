@@ -41,6 +41,14 @@
     position: relative;
 }
 
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
 /* GENERAL */
 body {
     background-color: var(--primary-color);
@@ -102,6 +110,10 @@ p {
     width: 50%;
 }
 
+.width40 {
+    width: 40%;
+}
+
 .container-1200 {
     max-width: 1200px;
     width: 100%;
@@ -158,6 +170,10 @@ body>section {
 
 .gap30 {
     gap: 80px;
+}
+
+.gap10 {
+    gap: 30px;
 }
 
 .inter-section {
@@ -427,9 +443,96 @@ textarea {
     padding-top: 5px;
 }
 
+/* MENU BURGER */
+.burger-menu {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.bar:nth-child(1) {
+    top: 0;
+}
+
+.bar:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bar:nth-child(3) {
+    bottom: 0;
+}
+
+.burger-menu.open .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.burger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.open .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.fenetre-menu {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 78px;
+    left: 0;
+    z-index: 1;
+}
+
+.fenetre-menu ul {
+    padding: 25px;
+    color: var(--secondary-color);
+    font-size: 32px;
+    font-weight: 700;
+    list-style-type: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+.starMini {
+    background-image: URL('./assets/footer-star.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+
+}
+
 
 /* Petite taille d'écran */
 @media screen and (max-width: 576px) {
+
+    .starMini {
+        display: block;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .mrgB125 {
+        margin-bottom: 50px;
+    }
+
+    .menuD {
+        display: none;
+    }
 
     /* Titres */
     h1,
@@ -477,6 +580,7 @@ textarea {
     input[type="email"],
     textarea {
         width: 100%;
+        margin-bottom: 16px;
     }
 
     .zeze {
@@ -491,6 +595,9 @@ textarea {
 
 /* Moyenne taille d'écran */
 @media screen and (min-width: 377px) and (max-width: 991px) {
+    .starMini {
+        display: block;
+    }
 
     /* Titres */
     h1,
@@ -536,10 +643,5 @@ textarea {
     .btn {
         padding: 12px 50px;
         font-size: 18px;
-    }
-
-    /* Profil */
-    .container-profil {
-        grid-template-columns: repeat(2, 1fr);
     }
 }

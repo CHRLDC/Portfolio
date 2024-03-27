@@ -15,11 +15,13 @@ function construireMonTemplateProjet(donnees) {
     donnees.forEach(donne => {
         if (urlRef === donne.reference) {
             zone.innerHTML += `
-            <div class="width50">
+            <div class="width40">
             <h1 class="mrgB45">${donne.nom}</h1>
             <p class="mrgB16"><strong>Année:</strong> ${donne.annee}</p>
             <p class="mrgB16"><strong>Client:</strong> ${donne.client}</p>
-            <p class="mrgB16"><strong>Contexte:</strong> ${donne.context}</p>
+            <p class="mrgB16"><strong>Technologies:</strong> ${donne.technologies}</p>
+            <p class="mrgB16"><strong>Description:</strong><br> ${donne.description}</p>
+            <p class="mrgB16"><strong>Expérience retenue:</strong><br> ${donne.experience}</p>
         </div>
         <div class="width50">
         <div class="contner">
@@ -27,8 +29,9 @@ function construireMonTemplateProjet(donnees) {
         <div id="plein-ecran">
         <span class="fermer" onclick="fermerPleinEcran()">&times;</span>
         <img id="image-plein-ecran" src="" alt="">
-</div>
         </div>
+        </div>
+        <p>Cliquez sur l'image pour visualiser en plein écran.</p>
         </div>
         `
         }

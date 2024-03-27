@@ -31,25 +31,43 @@
             <!-- HEADER -->
             <header class="mrgB125">
                 <nav>
-                    <ul class="flex justify-center gap30">
+                    <ul class="menuD flex justify-center gap30">
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="#profils">Profils</a></li>
                         <li><a href="#projets">Projets</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
+                <!--MENU BURGER-->
+                <div id="burger-menu" class="burger-menu d-none">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div id="fenetre-menu" class="fenetre-menu d-none">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#profils">Profils</a></li>
+                        <li><a href="#projets">Projets</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </header>
             <!-- PROFILS -->
             <div class="inter-section">
                 <section class="container-1200">
+                    <span class="starMini mAuto d-none"></span>
                     <h3 class="texte-center mrgB45">Charles DC</h3>
                     <div class="container-profil">
                         <div class="me-contacter module">
                             <span class="halo"></span>
-                            <p>N'hésitez pas à
-                                me contacter en utilisant ce bouton:</p>
-                            <div class="texte-center">
-                                <a href="#contact" class="btn">Me contacter</a>
+                            <h4 class="mrgB16">Me contacter:</h4>
+                            <div class="flex gap10 justify-center">
+                                <p>N'hésitez pas à
+                                    me contacter en utilisant ce bouton:</p>
+                                <div class="texte-center">
+                                    <a href="#contact" class="btn">Me contacter</a>
+                                </div>
                             </div>
                         </div>
                         <div class="bio module">
@@ -102,7 +120,6 @@
                                 <p class="word">Leaflet</p>
                                 <p class="word">Bootstrap</p>
                                 <p class="word">Bulma</p>
-                                <p class="word">Leaflet</p>
                                 <p class="word">Anime.js</p>
                                 <p class="word">AOS</p>
                                 <p class="word">GSAP</p>
@@ -112,7 +129,7 @@
                         </div>
                         <div class="module">
                             <span class="halo"></span>
-                            <h4>Je vous propose:</h4>
+                            <h4 class="mrgB16">Je vous propose le développement de:</h4>
                             <div class="cloud">
                                 <p class="word">Portfolio</p>
                                 <p class="word">sites vitrines</p>
@@ -123,7 +140,7 @@
                         </div>
                         <div class="module">
                             <span class="halo"></span>
-                            <h4>Je vous propose:</h4>
+                            <h4 class="mrgB16">Je vous propose la création de:</h4>
                             <div class="cloud">
                                 <p class="word">Design d'interfaces</p>
                                 <p class="word">Mise en place de SEO</p>
@@ -133,7 +150,7 @@
                         </div>
                         <div class="module">
                             <span class="halo"></span>
-                            <h4>Aussi:</h4>
+                            <h4 class="mrgB16">Mais aussi:</h4>
                             <div class="cloud">
                                 <p class="word">Formation</p>
                                 <p class="word">Mentorat</p>
