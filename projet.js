@@ -15,7 +15,7 @@ function construireMonTemplateProjet(donnees) {
     donnees.forEach(donne => {
         if (urlRef === donne.reference) {
             zone.innerHTML += `
-            <div class="width40">
+            <div class="width40 w100R">
             <h1 class="mrgB45">${donne.nom}</h1>
             <p class="mrgB16"><strong>Année:</strong> ${donne.annee}</p>
             <p class="mrgB16"><strong>Client:</strong> ${donne.client}</p>
@@ -23,7 +23,7 @@ function construireMonTemplateProjet(donnees) {
             <p class="mrgB16"><strong>Description:</strong><br> ${donne.description}</p>
             <p class="mrgB16"><strong>Expérience retenue:</strong><br> ${donne.experience}</p>
         </div>
-        <div class="width50">
+        <div class="width50 w100R">
         <div class="contner">
         <img class="img-projet" src="./images/${donne.imagePrincipal}" alt="${donne.nom}" onclick="afficherPleinEcran(this)">
         <div id="plein-ecran">

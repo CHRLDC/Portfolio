@@ -541,7 +541,6 @@ textarea {
         display: flex;
         align-items: center;
         justify-content: space-between;
-
     }
 
     .starMini {
@@ -625,10 +624,19 @@ textarea {
         width: 100%;
         justify-content: center;
     }
+
+    /*PAGE PROJET*/
+    .w100R {
+        width: 100%;
+    }
+
+    #retour {
+        display: none;
+    }
 }
 
 /* Moyenne taille d'écran */
-@media screen and (min-width: 377px) and (max-width: 991px) {
+@media screen and (min-width: 377px) and (max-width: 900px) {
     .starMini {
         display: block;
     }
@@ -657,25 +665,9 @@ textarea {
         padding: 10px 30px;
         font-size: 16px;
     }
-}
 
-/* Grande taille d'écran */
-@media screen and (min-width: 992px) {
-
-    /* Titres */
-    h1,
-    h3 {
-        font-size: 66px;
-    }
-
-    h2 {
-        font-size: 48px;
-        letter-spacing: 10px;
-    }
-
-    /* Boutons */
-    .btn {
-        padding: 12px 50px;
-        font-size: 18px;
+    /*PAGE PROJET*/
+    .w100R {
+        width: 100%;
     }
 }
