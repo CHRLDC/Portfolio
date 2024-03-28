@@ -17,7 +17,7 @@ function construireMonTemplateProjet(donnees) {
             zone.innerHTML += `
             <div class="width40 w100R">
             <h1 class="mrgB45">${donne.nom}</h1>
-            <p class="mrgB16"><strong>Lien direct:</strong> ${donne.lien}</p>
+            <p class="mrgB16"><a href="${donne.lien}">Voir le projet</a></p>
             <p class="mrgB16"><strong>Année:</strong> ${donne.annee}</p>
             <p class="mrgB16"><strong>Client:</strong> ${donne.client}</p>
             <p class="mrgB16"><strong>Technologies:</strong> ${donne.technologies}</p>
