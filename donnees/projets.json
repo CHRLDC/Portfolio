@@ -105,7 +105,8 @@
             "Dall-E"
         ],
         "experience": "Ce projet m'a permis de plonger dans le domaine de l'intelligence artificielle et de découvrir les possibilités créatives offertes par les techniques de génération de contenu automatique.",
-        "imagePrincipal": "absurde-principal.png"
+        "imagePrincipal": "absurde-principal.png",
+        "lien": "https://chrldc.github.io/site-absurde/"
     },
     {
         "reference": "moovizy",
@@ -119,7 +120,7 @@
         ],
         "experience": "J'ai réalisé un projet personnel de conception d'une application de mobilité axée sur la sécurité, en utilisant Figma pour passer de la conception initiale à des prototypes interactifs. J'ai suivi une approche itérative, débutant par des wireframes basiques et évoluant vers des designs visuels élaborés. Des tests utilisateurs ont été menés à chaque étape pour garantir une expérience optimale.",
         "imagePrincipal": "moovizy-principal.png",
-        "lien":"https://www.figma.com/file/Vd2PwyqHM5mJjvPGAUDjvd/Groupe1-Prototypes-Moovizy-S%C3%A9curit%C3%A9?type=design&node-id=1127%3A9587&mode=design&t=AQVgcJilWTcOVPvJ-1"
+        "lien": "https://www.figma.com/file/Vd2PwyqHM5mJjvPGAUDjvd/Groupe1-Prototypes-Moovizy-S%C3%A9curit%C3%A9?type=design&node-id=1127%3A9587&mode=design&t=AQVgcJilWTcOVPvJ-1"
     },
     {
         "reference": "morpion",
