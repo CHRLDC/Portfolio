@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(data => {
             construireMonTemplateProjet(data);
             changeProjet(data)
+            cacheLien(data)
         })
 });
 
@@ -15,29 +16,30 @@ function construireMonTemplateProjet(donnees) {
     donnees.forEach(donne => {
         if (urlRef === donne.reference) {
             zone.innerHTML += `
-            <div class="width40 w100R">
-            <h1 class="mrgB45">${donne.nom}</h1>
-            <p class="mrgB16"><a href="${donne.lien}">Voir le projet</a></p>
-            <p class="mrgB16"><strong>Année:</strong> ${donne.annee}</p>
-            <p class="mrgB16"><strong>Client:</strong> ${donne.client}</p>
-            <p class="mrgB16"><strong>Technologies:</strong> ${donne.technologies}</p>
-            <p class="mrgB16"><strong>Description:</strong><br> ${donne.description}</p>
-            <p class="mrgB16"><strong>Expérience retenue:</strong><br> ${donne.experience}</p>
-        </div>
-        <div class="width50 w100R">
-        <div class="contner">
-        <img class="img-projet" src="./images/${donne.imagePrincipal}" alt="${donne.nom}" onclick="afficherPleinEcran(this)">
-        <div id="plein-ecran">
-        <span class="fermer" onclick="fermerPleinEcran()">&times;</span>
-        <img id="image-plein-ecran" src="" alt="">
-        </div>
-        </div>
-        <p>Cliquez sur l'image pour visualiser en plein écran.</p>
-        </div>
-        `
+                <div class="width40 w100R">
+                    <h1 class="mrgB45">${donne.nom}</h1>
+                    ${donne.lien ? `<p class="mrgB16"><a id="lien-projet-${donne.reference}" class="voir-projet" href="${donne.lien}">Voir le projet</a></p>` : ''}
+                    <p class="mrgB16"><strong>Année:</strong> ${donne.annee}</p>
+                    <p class="mrgB16"><strong>Client:</strong> ${donne.client}</p>
+                    <p class="mrgB16"><strong>Technologies:</strong> ${donne.technologies}</p>
+                    <p class="mrgB16"><strong>Description:</strong><br> ${donne.description}</p>
+                    <p class="mrgB16"><strong>Expérience retenue:</strong><br> ${donne.experience}</p>
+                </div>
+                <div class="width50 w100R">
+                    <div class="contner">
+                        <img class="img-projet" src="./images/${donne.imagePrincipal}" alt="${donne.nom}" onclick="afficherPleinEcran(this)">
+                        <div id="plein-ecran">
+                            <span class="fermer" onclick="fermerPleinEcran()">&times;</span>
+                            <img id="image-plein-ecran" src="" alt="">
+                        </div>
+                    </div>
+                    <p>Cliquez sur l'image pour visualiser en plein écran.</p>
+                </div>
+            `;
         }
-    })
+    });
 }
+
 
 function afficherPleinEcran(image) {
     document.getElementById("image-plein-ecran").src = image.src

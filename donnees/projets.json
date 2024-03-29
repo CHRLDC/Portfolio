@@ -12,7 +12,8 @@
             "JavaScript"
         ],
         "experience": "Ce projet m'a permis de renforcer mes compétences en développement front-end, ainsi que ma compréhension des exigences spécifiques des sites de réservation en ligne.",
-        "imagePrincipal": "4elements-principal.png"
+        "imagePrincipal": "4elements-principal.png",
+        "lien":""
     },
     {
         "reference": "nmtn",
@@ -27,7 +28,8 @@
             "JavaScript"
         ],
         "experience": "Ce projet m'a permis d'explorer les défis uniques du développement web orienté vers les activités de plein air, et d'améliorer mes compétences en conception et développement d'interfaces utilisateur.",
-        "imagePrincipal": "nmtn-principal.png"
+        "imagePrincipal": "nmtn-principal.png",
+        "lien":""
     },
     {
         "reference": "market",
@@ -42,7 +44,8 @@
             "JavaScript"
         ],
         "experience": "Ce projet m'a permis de perfectionner mes compétences en développement web et en conception d'interfaces utilisateur, ainsi que ma compréhension des stratégies de vente en ligne.",
-        "imagePrincipal": "market-principal.png"
+        "imagePrincipal": "market-principal.png",
+        "lien":""
     },
     {
         "reference": "escape",
@@ -57,7 +60,8 @@
             "JavaScript"
         ],
         "experience": "Ce projet m'a offert l'opportunité de développer des fonctionnalités e-commerce complexes tout en garantissant une expérience utilisateur immersive et engageante.",
-        "imagePrincipal": "escape-principal.png"
+        "imagePrincipal": "escape-principal.png",
+        "lien":""
     },
     {
         "reference": "ms",
@@ -72,7 +76,8 @@
             "JavaScript"
         ],
         "experience": "Ce projet m'a permis de me concentrer sur l'aspect visuel et l'expérience utilisateur, en mettant en valeur des produits de qualité à travers un design élégant et minimaliste.",
-        "imagePrincipal": "ms-principal.png"
+        "imagePrincipal": "ms-principal.png",
+        "lien":""
     },
     {
         "reference": "meteo",
@@ -89,7 +94,8 @@
             "API météo"
         ],
         "experience": "Ce projet m'a permis de développer mes compétences en intégration d'API et en création d'applications web réactives, tout en fournissant une valeur pratique aux utilisateurs finaux.",
-        "imagePrincipal": "meteo-principal.png"
+        "imagePrincipal": "meteo-principal.png",
+        "lien":""
     },
     {
         "reference": "absurde",
@@ -135,6 +141,7 @@
             "JavaScript"
         ],
         "experience": "Ce projet m'a permis de me plonger dans le développement de jeux en ligne en utilisant des technologies web modernes, tout en explorant les défis spécifiques liés à la création de jeux multijoueurs en temps réel.",
-        "imagePrincipal": "morpion-principal.png"
+        "imagePrincipal": "morpion-principal.png",
+        "lien":""
     }
 ]
