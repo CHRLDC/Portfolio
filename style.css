@@ -307,6 +307,17 @@ header {
     margin: 32px 35%;
 }
 
+.logo-qui {
+    background-image: URL('./assets/logo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+    display: grid;
+    margin: 32px 35%;
+}
+
 .me-contacter {
     grid-area: me-contacter;
 }
