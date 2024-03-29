@@ -9,11 +9,11 @@
 :root {
     --font-family-Gothic: "Gothic A1", sans-serif;
     --font-family-Dancing: "Dancing Script", cursive;
-    --primary-color: #212121;
-    --secondary-color: #DED7C4;
+    --primary-color: #151515;
+    --secondary-color: #e4d9bc;
 }
 
-.slog{
+.slog {
     font-family: var(--font-family-Dancing);
     font-size: 32px;
 
