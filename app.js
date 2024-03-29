@@ -10,7 +10,7 @@ function construitMonTemplate(donnees) {
     let zone = document.getElementById('zone');
 
     donnees.forEach(donnee => {
-        zone.innerHTML += `<div class="carousel-item"> <a href="./projet.html?ref=${donnee.reference}">
+        zone.innerHTML += `<div class="carousel-item" data-aos="zoom-in" data-aos-duration="2000"> <a href="./projet.html?ref=${donnee.reference}">
                                 <div class="projet-com bg-proj"></div>
                               </a> </div>`
     });
@@ -204,3 +204,5 @@ function hasCode(text) {
     let reg = /<script/
     return reg.test(text)
 }
+
+AOS.init();
