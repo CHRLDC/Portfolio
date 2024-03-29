@@ -16,7 +16,6 @@
 .slog {
     font-family: var(--font-family-Dancing);
     font-size: 32px;
-
 }
 
 .voir-projet {
@@ -251,6 +250,7 @@ header {
     background-image: URL('./assets/Texte-Acceuil.svg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
     filter: drop-shadow(1px 1px 2px);
     position: relative;
 }

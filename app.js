@@ -1,51 +1,58 @@
+// Récupération des données JSON depuis le serveur
 fetch("./donnees/projets.json")
     .then(res => {
-        return res.json()
+        return res.json(); // Convertit la réponse en JSON
     })
     .then(data => {
-        construitMonTemplate(data)
-    })
+        // Appel de la fonction pour construire le template des projets
+        construitMonTemplate(data);
+    });
 
+// Fonction pour construire le template des projets
 function construitMonTemplate(donnees) {
+    // Récupération de l'élément conteneur des projets
     let zone = document.getElementById('zone');
 
+    // Boucle à travers les données pour chaque projet
     donnees.forEach(donnee => {
+        // Construction du template HTML pour chaque projet
         zone.innerHTML += `<div class="carousel-item" data-aos="zoom-in" data-aos-duration="2000"> <a href="./projet.html?ref=${donnee.reference}">
                                 <div class="projet-com bg-proj"></div>
                               </a> </div>`
     });
-    let bgProjTous = document.querySelectorAll(".bg-proj")
+
+    // Sélection de tous les éléments avec la classe "bg-proj"
+    let bgProjTous = document.querySelectorAll(".bg-proj");
+
+    // Parcours de chaque élément avec la classe "bg-proj"
     bgProjTous.forEach((bgProj, index) => {
-        bgProj.style.backgroundImage = `url('./images/${donnees[index].imagePrincipal}')`
-    })
+        // Attribution de l'image principale à chaque élément "bg-proj"
+        bgProj.style.backgroundImage = `url('./images/${donnees[index].imagePrincipal}')`;
+    });
 }
 
-/* EFFET HALO DAS LES DIVS */
-
-
-let modules = document.querySelectorAll('.module')
+/* EFFET HALO DANS LES DIVS */
+// Récupération de tous les éléments avec la classe "module"
+let modules = document.querySelectorAll('.module');
 
 // Pour chaque module :
 modules.forEach(module => {
-    // Je récupère l'élément halo à l'intérieur
-    let halo = module.querySelector('.halo')
+    // Récupération de l'élément halo à l'intérieur
+    let halo = module.querySelector('.halo');
 
-    // Je fais apparaître le halo
+    // Affichage du halo au survol de la souris
     module.addEventListener('mouseenter', () => {
-        // Afficher le halo
-        halo.style.display = "block"
-        // Écouter les mouvements de la souris dans le module
-        module.addEventListener('mousemove', haloPosition)
-    })
+        halo.style.display = "block"; // Afficher le halo
+        module.addEventListener('mousemove', haloPosition); // Écouter les mouvements de la souris
+    });
 
     // Disparition du halo à la sortie de la souris
     module.addEventListener('mouseleave', () => {
-        // Masquer le halo
-        halo.style.display = "none"
-        // Arrêter d'écouter les mouvements de la souris dans le module
-        module.removeEventListener('mousemove', haloPosition)
-    })
-})
+        halo.style.display = "none"; // Masquer le halo
+        module.removeEventListener('mousemove', haloPosition); // Arrêter d'écouter les mouvements de la souris
+    });
+});
+
 
 //applique les cooronnées position souris au halo:
 function haloPosition(hal) {
@@ -58,58 +65,74 @@ function haloPosition(hal) {
     halo.style.top = `${y}px`
 }
 
+/* MENU BURGER */
 // Je récupère les éléments du menu burger:
-let burgerMenu = document.getElementById('burger-menu')//le menu
-let fenetreMenu = document.getElementById('fenetre-menu')//la fenêtre
-// J'ajoute un écouteur d'événement pour le clic sur le menu burger:
+let burgerMenu = document.getElementById('burger-menu'); // le menu
+let fenetreMenu = document.getElementById('fenetre-menu'); // la fenêtre
+
+// Ajout d'un écouteur d'événement pour le clic sur le menu burger:
 burgerMenu.addEventListener('click', function () {
-    // Je bascule la classe "open" lorsque le menu est cliqué:
+    // Basculement de la classe "open" lors du clic sur le menu burger:
     burgerMenu.classList.toggle('open');
-    // Si le menu gurger a la classe open:
+
+    // Si le menu burger a la classe "open":
     if (burgerMenu.classList.contains('open')) {
-        // J'ajoute d-block à la fenêtre:
+        // Ajout de la classe "d-block" à la fenêtre:
         fenetreMenu.classList.add('d-block');
         fenetreMenu.classList.remove('d-none');
     } else {
-        //sinon j'enlève d-block à la fenêtre:
+        // Sinon, suppression de la classe "d-block" à la fenêtre:
         fenetreMenu.classList.remove('d-block');
         fenetreMenu.classList.add('d-none');
     }
-})
+});
+
 
 /* CONTROLE FORMULAIRE */
 
-let form = document.getElementById("form")
+/* CONTROLE FORMULAIRE */
+
+// Récupération de l'élément formulaire
+let form = document.getElementById("form");
+
+// Ajout d'un écouteur d'événement pour la soumission du formulaire
 form.addEventListener("submit", (e) => {
-    e.preventDefault()
-    let nom = document.getElementById("nom")
-    let mail = document.getElementById("email")
-    let message = document.getElementById("message")
+    e.preventDefault(); // Empêche l'envoi par défaut du formulaire
 
-    let test1 = testNom(nom)
-    let test2 = checkMail(mail)
-    let test3 = testMessage(message)
+    // Récupération des champs du formulaire
+    let nom = document.getElementById("nom");
+    let mail = document.getElementById("email");
+    let message = document.getElementById("message");
 
+    // Validation des champs du formulaire
+    let test1 = testNom(nom);
+    let test2 = checkMail(mail);
+    let test3 = testMessage(message);
+
+    // Affichage d'une alerte si tous les tests de validation sont réussis
     if (test1 === true && test2 === true && test3 === true) {
-        alert("votre message a bien été envoyé")
+        alert("Votre message a bien été envoyé.");
     }
-})
+});
 
-let nom = document.getElementById("nom")
-let mail = document.getElementById("email")
-let message = document.getElementById("message")
+// Récupération des champs du formulaire
+let nom = document.getElementById("nom");
+let mail = document.getElementById("email");
+let message = document.getElementById("message");
 
+// Ajout d'écouteurs d'événement pour les changements dans les champs du formulaire
 nom.addEventListener("change", () => {
-    testNom(nom)
-})
+    testNom(nom);
+});
 
 mail.addEventListener("change", () => {
-    checkMail(mail)
-})
+    checkMail(mail);
+});
 
 message.addEventListener("change", () => {
-    testMessage(message)
-})
+    testMessage(message);
+});
+
 
 function testMessage(balise) {
     //Si la valeur de la balise est vide:
@@ -131,44 +154,71 @@ function testMessage(balise) {
     return true
 }
 
-function testNom(balise) {
-    // si le champ est vide
-    if (balise.value === "") {
-        // affiche l'erreur
-        afficheErreur(balise.id, "Ce champ ne peut pas être vide");
-        return false;
-    } else if (/[^a-zA-ZÀ-ÿ'-\s]/.test(balise.value)) {
-        // Expression régulière qui contrôle les caractères spéciaux et chiffres.
-        afficheErreur(balise.id, "Caractères non autorisés");
+// Définition de la fonction de validation du champ "message"
+function testMessage(balise) {
+    // Si le champ est vide, afficher un message d'erreur
+    if (balise.value == "") {
+        afficheErreur(balise.id, "Votre message est vide.");
         return false;
     } else if (hasCode(balise.value)) {
-        // est-ce que notre utilisateur n'est pas en train d'injecter du code
+        // Si le champ contient du code, afficher un message d'erreur
+        afficheErreur(balise.id, "Vous ne pouvez pas écrire de script ici.");
+        return false;
+    } else if (balise.value.length > 500) {
+        // Si le message est trop long, afficher un message d'erreur
+        afficheErreur(balise.id, "Votre message est trop long.");
+        return false;
+    }
+    // Si aucune erreur n'est détectée, enlever l'erreur
+    enleveErreur("message");
+    return true;
+}
+
+
+/**
+ * Définition de la fonction de validation du champ "nom"
+ * @param {*} balise 
+ * @returns 
+ */
+function testNom(balise) {
+    // Si le champ est vide, afficher un message d'erreur
+    if (balise.value === "") {
+        afficheErreur(balise.id, "Ce champ ne peut pas être vide.");
+        return false;
+    } else if (/[^a-zA-ZÀ-ÿ'-\s]/.test(balise.value)) {
+        // Si le champ contient des caractères spéciaux, afficher un message d'erreur
+        afficheErreur(balise.id, "Caractères non autorisés.");
+        return false;
+    } else if (hasCode(balise.value)) {
+        // Si le champ contient du code, afficher un message d'erreur
         afficheErreur(balise.id, "Vous avez injecté du code, pas bien !");
         return false;
     } else if (balise.value.length > 50) {
-        // est-ce que le texte est trop long
+        // Si le nom est trop long, afficher un message d'erreur
         afficheErreur(balise.id, "Vous avez tapé un nom trop long !");
         return false;
     } else {
-        // Si tout est ok:
+        // Si aucune erreur n'est détectée, enlever l'erreur
         enleveErreur(balise.id);
         return true;
     }
 }
 
+// Définition de la fonction de validation de l'email
 function checkMail(email) {
-    // Expression régulière pour valider une adresse e-mail:
-    let addEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    // Si l'adresse e-mail est valide:
+    // Expression régulière pour valider une adresse e-mail
+    let addEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // Si l'email est valide, enlever l'erreur
     if (addEmail.test(email.value)) {
         enleveErreur(email.id);
         return true;
     } else if (email.value === "") {
-        // Teste si le champ est vide
-        afficheErreur(email.id, "Merci de saisir une adresse e-mail type exemple@mail.fr");
+        // Si le champ est vide, afficher un message d'erreur
+        afficheErreur(email.id, "E-mail non valide.");
         return false;
     } else {
-        // Si elle ne l'est pas, afficher une erreur:
+        // Sinon, afficher un message d'erreur
         afficheErreur(email.id, "Adresse e-mail non valide.");
         return false;
     }
@@ -180,11 +230,11 @@ function checkMail(email) {
 * @param {string} messageErreur à afficher
 */
 function afficheErreur(id, messageErreur) {
-    let input = document.getElementById(id)
-    input.classList.add("input-error")
-    let p = document.getElementById("error-" + id)
-    p.innerText = messageErreur
-    p.classList.remove("d-none")
+    let input = document.getElementById(id);
+    input.classList.add("input-error"); // Ajout de la classe pour indiquer une erreur
+    let p = document.getElementById("error-" + id); // Sélection du paragraphe d'erreur associé
+    p.innerText = messageErreur; // Affichage du message d'erreur
+    p.classList.remove("d-none"); // Suppression de la classe pour afficher le paragraphe
 }
 
 /**
@@ -192,31 +242,39 @@ function afficheErreur(id, messageErreur) {
 * @param {object} id de l'input dans lequel il y a une erreur
 */
 function enleveErreur(id) {
-    let input = document.getElementById(id)
-    input.classList.remove("input-error")
-    let p = document.getElementById("error-" + id)
-    p.innerText = ""
-    p.classList.add("d-none")
+    let input = document.getElementById(id);
+    input.classList.remove("input-error"); // Suppression de la classe pour indiquer une erreur
+    let p = document.getElementById("error-" + id); // Sélection du paragraphe d'erreur associé
+    p.innerText = ""; // Réinitialisation du message d'erreur
+    p.classList.add("d-none"); // Ajout de la classe pour cacher le paragraphe
 }
 
+
+
+/**
+ * Fonction pour détecter la présence de code HTML dans une chaîne de texte
+ * @param {string} text 
+ * @returns true si pas de script
+ */
 function hasCode(text) {
-    // Expression régulière qui contrôle si une balise script
-    let reg = /<script/
-    return reg.test(text)
+    // Expression régulière qui recherche la présence de la balise <script
+    let reg = /<script/;
+    return reg.test(text); // Retourne true si du code HTML est trouvé, sinon false
 }
 
-//Libraurie AOS
+// Initialisation de la bibliothèque AOS pour les animations
 AOS.init();
 
-//Smoth Scrool livrairie LENIS
-const lenis = new Lenis()
+// Initialisation de la bibliothèque Lenis pour le défilement en douceur
+const lenis = new Lenis();
 lenis.on('scroll', (e) => {
-    console.log(e)
-})
+    console.log(e); // Affiche les informations sur le défilement dans la console
+});
 
+// Fonction de mise à jour du défilement en utilisant requestAnimationFrame
 function raf(time) {
-    lenis.raf(time)
-    requestAnimationFrame(raf)
+    lenis.raf(time); // Appel de la fonction raf de Lenis
+    requestAnimationFrame(raf); // Appel récursif de requestAnimationFrame pour maintenir la mise à jour du défilement
 }
 
-requestAnimationFrame(raf)
+requestAnimationFrame(raf); // Appel initial de requestAnimationFrame pour démarrer la mise à jour du défilement

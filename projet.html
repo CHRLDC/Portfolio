@@ -9,31 +9,49 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
+
 <body>
     <main>
+        <!-- Conteneur principal -->
         <div class="border container-1500">
             <!-- HEADER -->
             <header class="mrgB45 projR">
+                <!-- Barre de navigation -->
                 <nav>
                     <ul class="flex justify-center gap30">
                         <li><a href="./index.html">Home</a></li>
                     </ul>
                 </nav>
             </header>
+            <!-- Section de présentation du projet -->
             <div>
                 <section id="zone-projet" class="container-1200 flex justify-between pB80">
-                    <!--<div class="width50">
+                    <!-- Contenu du projet -->
+                    <!-- Les détails du projet seront insérés ici -->
+                    <!-- Exemple de structure à utiliser pour chaque projet -->
+                    <!--
+                    <div class="width40 w100R">
                         <h1 class="mrgB45">${donne.nom}</h1>
+                        ${donne.lien ? `<p class="mrgB16"><a id="lien-projet-${donne.reference}" class="voir-projet" href="${donne.lien}">Voir le projet</a></p>` : ''}
                         <p class="mrgB16"><strong>Année:</strong> ${donne.annee}</p>
                         <p class="mrgB16"><strong>Client:</strong> ${donne.client}</p>
-                        <p class="mrgB16"><strong>Contexte:</strong> ${donne.context}</p>
+                        <p class="mrgB16"><strong>Technologies:</strong> ${donne.technologies}</p>
+                        <p class="mrgB16"><strong>Description:</strong><br> ${donne.description}</p>
+                        <p class="mrgB16"><strong>Expérience retenue:</strong><br> ${donne.experience}</p>
                     </div>
-                    <div class="width50 swipper-wrapper">
-                        <div class="contner swipper-slide">
-                            <img id="maDiv" src="./images/${donne.imagePrincipal}" alt="">
+                    <div class="width50 w100R">
+                        <div class="contner">
+                            <img class="img-projet" src="./images/${donne.imagePrincipal}" alt="${donne.nom}" onclick="afficherPleinEcran(this)">
+                            <div id="plein-ecran">
+                                <span class="fermer" onclick="fermerPleinEcran()">&times;</span>
+                                <img id="image-plein-ecran" src="" alt="">
+                            </div>
                         </div>
-                    </div>-->
+                        <p>Cliquez sur l'image pour visualiser en plein écran.</p>
+                    </div>
+                    -->
                 </section>
+                <!-- Boutons de navigation entre les projets -->
                 <div class="flex justify-center gap30">
                     <a class="btn" id="precedent">Précédent</a>
                     <a href="./index.html#projets" class="btn" id="retour">Retour</a>
@@ -42,15 +60,17 @@
             </div>
         </div>
     </main>
-    <!--FOOTER-->
+    <!-- FOOTER -->
     <footer>
         <div class="footer-star container-1500">
+            <!-- Image du footer -->
             <img class="mrgB45" src="./images/Group3.svg" alt="photo d'une etoile">
         </div>
+        <!-- Texte du footer -->
         <p class="texte-center mrgB16">© 2024 - Created by Charles DC.</p>
     </footer>
     <!--Script relié-->
+    <!-- Script JavaScript -->
     <script src="./projet.js" defer></script>
 </body>
-
 </html>
