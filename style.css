@@ -49,6 +49,11 @@
     text-align: center;
 }
 
+.font700 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
 /*POSITIONS*/
 .relative {
     position: relative;

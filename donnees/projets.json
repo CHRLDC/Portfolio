@@ -13,7 +13,59 @@
         ],
         "experience": "Ce projet m'a permis de renforcer mes compétences en développement front-end, ainsi que ma compréhension des exigences spécifiques des sites de réservation en ligne.",
         "imagePrincipal": "4elements-principal.png",
-        "lien":""
+        "indexImage": "elements-index.png",
+        "lien": ""
+    },
+    {
+        "reference": "moovizy",
+        "nom": "Moovizy-Sécurite",
+        "categorie": "Application de mobilité",
+        "annee": 2024,
+        "client": "Projet personnel",
+        "description": "Conception UI/UX d'une application de mobilité axée sur la sécurité, avec une approche itérative de la low-fi à la high-fi en utilisant Figma. Les étapes incluent l'analyse des besoins, le wireframing, le design visuel, la création de prototypes interactifs et des tests utilisateurs pour garantir une expérience optimale.",
+        "technologies": [
+            "Figma"
+        ],
+        "experience": "J'ai réalisé un projet personnel de conception d'une application de mobilité axée sur la sécurité, en utilisant Figma pour passer de la conception initiale à des prototypes interactifs. J'ai suivi une approche itérative, débutant par des wireframes basiques et évoluant vers des designs visuels élaborés. Des tests utilisateurs ont été menés à chaque étape pour garantir une expérience optimale.",
+        "imagePrincipal": "moovizy-principal.png",
+        "indexImage": "moovizy-index.png",
+        "lien": "https://www.figma.com/file/Vd2PwyqHM5mJjvPGAUDjvd/Groupe1-Prototypes-Moovizy-S%C3%A9curit%C3%A9?type=design&node-id=1127%3A9587&mode=design&t=AQVgcJilWTcOVPvJ-1"
+    },
+    {
+        "reference": "ms",
+        "nom": "M'S",
+        "categorie": "Boutique en ligne",
+        "annee": 2024,
+        "client": "Projet personnel",
+        "description": "M'S est une boutique en ligne spécialisée dans les produits de sport pour homme. Son design épuré et ses fonctionnalités de navigation simplifiées offrent une expérience d'achat plaisante aux utilisateurs.",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Swiper.js"
+        ],
+        "experience": "Ce projet m'a permis de me concentrer sur l'aspect visuel et l'expérience utilisateur, en mettant en valeur des produits de qualité à travers un design élégant et minimaliste.",
+        "imagePrincipal": "ms-principal.png",
+        "indexImage": "ms-index.png",
+        "lien": "https://chrldc.github.io/ms/"
+    },
+    {
+        "reference": "absurde",
+        "nom": "Site Absurde",
+        "categorie": "Utilisation des IA",
+        "annee": 2024,
+        "client": "Projet personnel",
+        "description": "Le Site Absurde est une expérience en ligne générée en partie par l'intelligence artificielle, générant du contenu absurde et surprenant. ",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "ChatGPT",
+            "Dall-E"
+        ],
+        "experience": "Ce projet m'a permis de plonger dans le domaine de l'intelligence artificielle et de découvrir les possibilités créatives offertes par les techniques de génération de contenu automatique.",
+        "imagePrincipal": "absurde-principal.png",
+        "indexImage": "absurde-index.png",
+        "lien": "https://chrldc.github.io/site-absurde/"
     },
     {
         "reference": "nmtn",
@@ -29,7 +81,8 @@
         ],
         "experience": "Ce projet m'a permis d'explorer les défis uniques du développement web orienté vers les activités de plein air, et d'améliorer mes compétences en conception et développement d'interfaces utilisateur.",
         "imagePrincipal": "nmtn-principal.png",
-        "lien":""
+        "indexImage": "nmtn-index.png",
+        "lien": ""
     },
     {
         "reference": "market",
@@ -45,7 +98,8 @@
         ],
         "experience": "Ce projet m'a permis de perfectionner mes compétences en développement web et en conception d'interfaces utilisateur, ainsi que ma compréhension des stratégies de vente en ligne.",
         "imagePrincipal": "market-principal.png",
-        "lien":""
+        "indexImage": "market-index.png",
+        "lien": ""
     },
     {
         "reference": "escape",
@@ -61,23 +115,8 @@
         ],
         "experience": "Ce projet m'a offert l'opportunité de développer des fonctionnalités e-commerce complexes tout en garantissant une expérience utilisateur immersive et engageante.",
         "imagePrincipal": "escape-principal.png",
-        "lien":""
-    },
-    {
-        "reference": "ms",
-        "nom": "M'S",
-        "categorie": "Boutique en ligne",
-        "annee": 2024,
-        "client": "Projet personnel",
-        "description": "M'S est une boutique en ligne spécialisée dans les produits de sport pour homme. Son design épuré et ses fonctionnalités de navigation simplifiées offrent une expérience d'achat plaisante aux utilisateurs.",
-        "technologies": [
-            "HTML",
-            "CSS",
-            "JavaScript"
-        ],
-        "experience": "Ce projet m'a permis de me concentrer sur l'aspect visuel et l'expérience utilisateur, en mettant en valeur des produits de qualité à travers un design élégant et minimaliste.",
-        "imagePrincipal": "ms-principal.png",
-        "lien":""
+        "indexImage": "escape-index.png",
+        "lien": ""
     },
     {
         "reference": "meteo",
@@ -95,38 +134,8 @@
         ],
         "experience": "Ce projet m'a permis de développer mes compétences en intégration d'API et en création d'applications web réactives, tout en fournissant une valeur pratique aux utilisateurs finaux.",
         "imagePrincipal": "meteo-principal.png",
-        "lien":""
-    },
-    {
-        "reference": "absurde",
-        "nom": "Site Absurde",
-        "categorie": "Utilisation des IA",
-        "annee": 2024,
-        "client": "Projet personnel",
-        "description": "Le Site Absurde est une expérience en ligne générée en partie par l'intelligence artificielle, générant du contenu absurde et surprenant. ",
-        "technologies": [
-            "HTML",
-            "CSS",
-            "ChatGPT",
-            "Dall-E"
-        ],
-        "experience": "Ce projet m'a permis de plonger dans le domaine de l'intelligence artificielle et de découvrir les possibilités créatives offertes par les techniques de génération de contenu automatique.",
-        "imagePrincipal": "absurde-principal.png",
-        "lien": "https://chrldc.github.io/site-absurde/"
-    },
-    {
-        "reference": "moovizy",
-        "nom": "Moovizy-Sécurite",
-        "categorie": "Application de mobilité",
-        "annee": 2024,
-        "client": "Projet personnel",
-        "description": "Conception UI/UX d'une application de mobilité axée sur la sécurité, avec une approche itérative de la low-fi à la high-fi en utilisant Figma. Les étapes incluent l'analyse des besoins, le wireframing, le design visuel, la création de prototypes interactifs et des tests utilisateurs pour garantir une expérience optimale.",
-        "technologies": [
-            "Figma"
-        ],
-        "experience": "J'ai réalisé un projet personnel de conception d'une application de mobilité axée sur la sécurité, en utilisant Figma pour passer de la conception initiale à des prototypes interactifs. J'ai suivi une approche itérative, débutant par des wireframes basiques et évoluant vers des designs visuels élaborés. Des tests utilisateurs ont été menés à chaque étape pour garantir une expérience optimale.",
-        "imagePrincipal": "moovizy-principal.png",
-        "lien": "https://www.figma.com/file/Vd2PwyqHM5mJjvPGAUDjvd/Groupe1-Prototypes-Moovizy-S%C3%A9curit%C3%A9?type=design&node-id=1127%3A9587&mode=design&t=AQVgcJilWTcOVPvJ-1"
+        "indexImage": "meteo-index.png",
+        "lien": ""
     },
     {
         "reference": "morpion",
@@ -142,6 +151,7 @@
         ],
         "experience": "Ce projet m'a permis de me plonger dans le développement de jeux en ligne en utilisant des technologies web modernes, tout en explorant les défis spécifiques liés à la création de jeux multijoueurs en temps réel.",
         "imagePrincipal": "morpion-principal.png",
-        "lien":""
+        "indexImage": "morpion-principal.png",
+        "lien": ""
     }
 ]

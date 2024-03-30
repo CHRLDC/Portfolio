@@ -27,7 +27,7 @@ function construitMonTemplate(donnees) {
     // Parcours de chaque élément avec la classe "bg-proj"
     bgProjTous.forEach((bgProj, index) => {
         // Attribution de l'image principale à chaque élément "bg-proj"
-        bgProj.style.backgroundImage = `url('./images/${donnees[index].imagePrincipal}')`;
+        bgProj.style.backgroundImage = `url('./images/${donnees[index].indexImage}')`;
     });
 }
 
