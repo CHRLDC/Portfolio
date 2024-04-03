@@ -191,7 +191,7 @@ function testNom(balise) {
         return false;
     } else if (hasCode(balise.value)) {
         // Si le champ contient du code, afficher un message d'erreur
-        afficheErreur(balise.id, "Vous avez injecté du code, pas bien !");
+        afficheErreur(balise.id, "Vous avez injecté du code...");
         return false;
     } else if (balise.value.length > 50) {
         // Si le nom est trop long, afficher un message d'erreur

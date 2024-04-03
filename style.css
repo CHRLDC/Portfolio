@@ -565,12 +565,13 @@ textarea {
 }
 
 .input-error {
-    border: 1px solid rgb(255, 0, 0);
+    border: 1px solid rgb(255, 0, 0) !important;
 }
 
 .p-error {
     color: red;
     font-size: 14px;
+    text-align: left;
 }
 
 /* Petite taille d'écran */
