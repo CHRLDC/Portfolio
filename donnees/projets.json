@@ -102,23 +102,6 @@
         "lien": ""
     },
     {
-        "reference": "escape",
-        "nom": "ESCAPE GAME",
-        "categorie": "Site marchand",
-        "annee": 2024,
-        "client": "Projet personnel",
-        "description": "Le projet ESCAPE GAME consiste à créer une plateforme de commerce pour une entreprise d'escape game. Les utilisateurs peuvent réserver une salle et participer aux aventures.",
-        "technologies": [
-            "HTML",
-            "CSS",
-            "JavaScript"
-        ],
-        "experience": "Ce projet m'a offert l'opportunité de développer des fonctionnalités e-commerce complexes tout en garantissant une expérience utilisateur immersive et engageante.",
-        "imagePrincipal": "escape-principal.png",
-        "indexImage": "escape-index.png",
-        "lien": ""
-    },
-    {
         "reference": "meteo",
         "nom": "Appli Méteo",
         "categorie": "Boutique en ligne",
