@@ -153,5 +153,20 @@
         "imagePrincipal": "morpion-principal.png",
         "indexImage": "morpion-principal.png",
         "lien": ""
+    },
+    {
+        "reference": "money",
+        "nom": "Money",
+        "categorie": "Financement participatif",
+        "annee": 2024,
+        "client": "Projet personnel",
+        "description": "Mise en place d'une méthode de travail à partir d'un cahier des charges juqu'à l'hébergement du site. Ici, extrait du code PHP. Sans utiliser de framework.",
+        "technologies": [
+            "PHP"
+        ],
+        "experience": "Ce projet m'a permis de mettre au point mon propre framework pour des projets de petites tailles.",
+        "imagePrincipal": "",
+        "indexImage": "",
+        "lien": "https://github.com/CHRLDC/money"
     }
 ]
