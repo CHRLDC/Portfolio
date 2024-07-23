@@ -165,8 +165,8 @@
             "PHP"
         ],
         "experience": "Ce projet m'a permis de mettre au point mon propre framework pour des projets de petites tailles.",
-        "imagePrincipal": "",
-        "indexImage": "",
+        "imagePrincipal": "money-principale.png",
+        "indexImage": "money-index.jpg",
         "lien": "https://github.com/CHRLDC/money"
     }
 ]
